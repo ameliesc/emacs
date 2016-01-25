@@ -1,28 +1,25 @@
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                         ("marmalade" . "https://marmalade-repo.org/packages/")
-                         ("melpa" . "https://melpa.org/packages/")))(when (>= emacs-major-version 24))
+			("melpa" . "https://melpa.org/packages/")))
+(when (>= emacs-major-version 24))
 
  (setq package-enable-at-startup nil)
  (package-initialize)
 
-;; sample code for setting a background color depending on file name extension
+; load theme
+(load-theme 'peacock t)
 
-(defun my-set-theme-on-mode ()
-  "set theme color depending on file suffix"
-  (interactive)
-  (let ((fileNameSuffix (file-name-extension (buffer-file-name) ) ))
-    (cond
-     ((string= fileNameSuffix "el" ) (load-theme 'peacock t ))
-     ((string= fileNameSuffix "tex" ) (load-theme 'leuven t))
-     (t (load-theme 'peackock t))
-     )
-    ))
+; shows diffrent bufers in minibuffer
+(require 'ido)
+(ido-mode t)
 
-(add-hook 'find-file-hook 'my-set-theme-on-mode)
+;(add-hook 'find-file-hook 'my-set-theme-on-mode)
 
 ;enable line numbers
 (global-linum-mode t)
-					
+
+
+;differemt system settings					
 (defun system-is-mac ()
   (interactive)
   (string-equal system-type "darwin"))
@@ -38,7 +35,7 @@
 ; set path for emacs in mac -systm since faulty
 (let ((default-directory  "~/.emacs.d/elpa/"))
   (normal-top-level-add-subdirs-to-load-path))
-
+;fixes path problem for windows 
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 ;; (setenv "PATH" (concat (getenv "PATH") ":/sw/bin"))
@@ -71,6 +68,31 @@
 (show-paren-mode 1)
 (setq show-paren-style 'mixed) ; highlight entire expression
 
+
+(require 'fill-column-indicator)
+(define-globalized-minor-mode
+ global-fci-mode fci-mode (lambda () (fci-mode 1)))
+(global-fci-mode t)
+
+; python-mode
+
+(require 'python-mode)
+
+; use IPython
+(setq-default py-shell-name "ipython")
+(setq-default py-which-bufname "IPython")
+; use the wx backend, for both mayavi and matplotlib
+(setq py-python-command-args
+  '("--gui=wx" "--pylab=wx" "-colors" "Linux"))
+(setq py-force-py-shell-name-p t)
+
+; switch to the interpreter after executing code
+(setq py-shell-switch-buffers-on-execute-p t)
+(setq py-switch-buffers-on-execute-p t)
+; don't split windows
+(setq py-split-windows-on-execute-p nil)
+; try to automagically figure out indentation
+(setq py-smart-indentation t)
 
 ;; Yas snippet
 (require 'yasnippet)
