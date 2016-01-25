@@ -1,0 +1,102 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/Amelie/exercism/cpp/" . "bob/")
+ ("/Users/Amelie/exercism/" . "cpp/")
+ ("/Users/Amelie/Documents/AUC/" . "Sem5/")
+ ("/Users/Amelie/GitHub/" . "CppPracticeCode/")
+ ("/sudo:root@localhost:/Users/" . "Amelie/")
+ ("/sudo:root@localhost:/Users/Amelie/" . ".emacs.d/")
+ ("/sudo:root@localhost:/Users/Amelie/Documents/" . "AUC/")
+ ("/Users/Amelie/Documents/AUC/Sem5/" . "AdResearchWr/")
+ ("/Users/Amelie/Documents/CambridgeInternship/" . "Lab 6/")
+ ("/Users/Amelie/Documents/" . "CambridgeInternship/")
+ ("/Users/Amelie/" . "Documents/")
+ ("/Users/" . "Amelie/")
+ ("/" . "Users/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/Amelie/Documents/CambridgeInternship/"
+ "/Users/Amelie/exercism/cpp/bob/"
+ "/Users/Amelie/Documents/CambridgeInternship/Lab 6/"
+ "/Users/Amelie/Documents/AUC/Sem5/AdResearchWr/"
+ "/sudo:root@localhost:/Users/Amelie/.emacs.d/"
+ "/sudo:root@localhost:/Users/Amelie/.emacs.d/lisp/"
+ "/sudo:root@localhost:/Users/Amelie/Documents/AUC/Sem5/AdResearchWr/"
+ "/Users/Amelie/.emacs.d/"
+ "/sudo:root@localhost:/Users/Amelie/Documents/AUC/"
+ "/Users/Amelie/.emacs.d/lisp/"
+ "/Users/Amelie/.emacs.d/misc/"
+ "/Users/Amelie/Documents/AUC/AdResearchWr/"
+ "/Users/Amelie/GitHub/C++-Code/"
+ "/Users/Amelie/Documents/CambridgeInternship/C++-Code/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "10_1.C"
+ "8_1.H"
+ "Lab9_1.C"
+ "8_2.H"
+ "8.2"
+ "bob.cpp"
+ "bob_test.cpp"
+ "bob.h"
+ "8_2.C"
+ "6_1_1.C"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/Amelie/.emacs.d/" (22109 58140 0 0) "tramp" "snippets/" "site-lisp/" "recentf" "README.org" "misc/" "lisp/" "init.el" "ido.last~" "ido.last" "history" "elpa/" "company-statistics-cache.el~" "company-statistics-cache.el" "BETA.org" "auto-save-list/" ".session" ".DS_Store" "%backup%~" "#README.org#" "../" "./")
+
+ ("/Users/Amelie/Documents/CambridgeInternship/" (22097 36548 0 0) "PracticalSolutions/" "Lab9_1.C" "Lab7.C" "Lab 6/" "Lab 5/" "Lab 3/" "C++ Practicals/" "C++ Lectures/" "9.1" "8_2.H" "8_2.C" "8_1.H" "8_1.C" "8.2" "7.1" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Documents/" (22108 36847 0 0) "~$elie Schmidt.docx" "untitled folder/" "Untitled 4.rtf" "The Imitation Game (2014) [1080p]/" "Schmidt-Colberg 2.pdf" "sarcasm.rtf" "Peer Review.docx" "Image.tiff" "CoverLetter.pdf" "CambridgeInternship/" "calsq.rtf" "Booking Form - Research-Long-stay-visitors-Nov-2014-4.docx" "AUCompliments.rtf" "AUC/" "Amelie Schmidt.docx" "Amelie Schmidt-resume.pdf" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/" (22109 57976 0 0) "test.tex" "Public/" "projs/" "Pictures/" "Music/" "Movies/" "Library/" "Google Drive/" "GitHub/" "exercism/" "emacs2.d/" "Downloads/" "Documents/" "Desktop/" "bin/" "Applications/" ".viminfo" ".Trash/" ".ssh/" ".smex-items" ".oracle_jre_usage/" ".gitconfig" ".exercism.json" ".emacs.keyfreq" ".emacs.d/" ".DS_Store" ".config/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile" ".bash_history" ".backups/" "../" "./")
+
+ ("/Users/Amelie/exercism/cpp/bob/" (22090 12236 0 0) "README.md" "CMakeLists.txt" "build/" "bob_test.cpp" "bob.h" "bob.cpp" "../" "./")
+
+ ("/Users/Amelie/exercism/cpp/" (22083 47927 0 0) "bob/" "../" "./")
+
+ ("/Users/Amelie/exercism/" (22083 47927 0 0) "cpp/" "../" "./")
+
+ ("/Users/Amelie/Documents/CambridgeInternship/Lab 6/" (22084 46223 0 0) "myProg" "MyFunc.H" "MyFunc.C" "Main.o" "Euler6_2.C" "Euler.o" "Euler.H" "Euler" "6_1_1.C" "611" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/lisp/" (22086 21600 0 0) "init-zencoding-mode.el" "init-yasnippet.el" "init-xterm.el" "init-writting.el" "init-workgroups2.el" "init-windows.el" "init-which-func.el" "init-web-mode.el" "init-utils.el" "init-uniquify.el" "init-textile.el" "init-term-mode.el" "init-stripe-buffer.el" "init-spelling.el" "init-smex.el" "init-slime.el" "init-site-lisp.el" "init-sh.el" "init-sessions.el" "init-semantic.el" "init-ruby-mode.el" "init-python-mode.el" "init-pomodoro.el" "init-org.el" "init-org-mime.el" "init-moz.el" "init-modeline.el" "init-misc.el" "init-misc-lazy.el" "init-markdown.el" "init-lua-mode.el" "init-locales.el" "init-lisp.el" "init-linum-mode.el" "init-latex.el" "init-keyfreq.el" "init-javascript.el" "init-ido.el" "init-ibuffer.el" "init-httpd.el" "init-hs-minor-mode.el" "init-hippie-expand.el" "init-helm.el" "init-haskell.el" "init-gui-frames.el" "init-gud.el" "init-gtags.el" "init-gnus.el" "init-git.el" "init-frame-hooks.el" "init-fonts.el" "init-flymake.el" "init-exec-path.el" "init-evil.el" "init-erlang.el" "init-emacspeak.el" "init-emacs-w3m.el" "init-elpa.el~" "init-elpa.el" "init-elisp.el" "init-eim.el" "init-doxygen.el" "init-dired.el" "init-ctags.el" "init-csv.el" "init-css.el" "init-crontab.el" "init-cperl-mode.el" "init-compat.el" "init-company.el" "init-color-theme.el" "init-clipboard.el" "init-chinese-pyim.el" "init-cc-mode.el" "init-bbdb.el" "init-artbollocks-mode.el" "../" "./")
+
+ ("/Users/Amelie/Downloads/" (22086 17631 0 0) "VPGallant.pdf" "stump.tex" "SecureW2.mobileconfig" "science.bib" "PracticalSolutions.tar.bz2" "pmcid-PMC4234525.ris" "pmcid-PMC4125038.ris" "pmcid-PMC3900517.ris" "pmcid-PMC3556484.ris" "pmcid-PMC3037423.ris" "nature06713.ris" "nature06713 (1).ris" "myelpa-2.0.zip" "myelpa-2.0/" "googlechrome.dmg" "GitHub Desktop 216.zip" "emacs.d-2.0.zip" "emacs.d-2.0 (1).zip" "emacs.d/" "269-28_men_tshirt_white.jpg" "1-s2.0-S0896627309006850-main.pdf" ".localized" ".DS_Store" ".#pmcid-PMC4234525.ris" ".#pmcid-PMC4125038.ris" "#pmcid-PMC4234525.ris#" "#pmcid-PMC4125038.ris#" "../" "./")
+
+ ("/Users/Amelie/Desktop/" (22083 10036 0 0) ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/" (22084 24858 0 0) "Sem5/" "ref.bib" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/GitHub/CppPracticeCode/" (22083 47312 0 0) "heapallocation.C" ".git/" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/misc/" (22084 22004 0 0) "english-words.txt" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem5/AdResearchWr/" (22084 22609 0 0) "draft.tex" "draft.bib" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem5/" (22084 22308 0 0) "Neuroscience/" "DynamicalSys/" "AdResearchWr/" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/elpa/" (22083 25570 0 0) "yasnippet-0.9.0.1/" "yaml-mode-20150816.2235/" "yagist-0.8.12/" "writeroom-mode-3.1/" "wgrep-20141016.1656/" "w3m-20150608.1838/" "visual-fill-column-1.5/" "unfill-0.1/" "textile-mode-20120721.1258/" "tagedit-1.4.0/" "string-edit-0.1.0/" "simple-httpd-20150430.1755/" "session-20120510.1700/" "scss-mode-0.5.0/" "scratch-20120830.1028/" "sass-mode-20150508.2012/" "s-1.9.0/" "rvm-1.4.0/" "ruby-compilation-2.11/" "robe-20150927.2217/" "rinari-2.11/" "regex-tool-20131104.1434/" "rainbow-delimiters-2.1.1/" "quack-20130126.1623/" "popwin-1.0.0/" "pomodoro-20150716.1046/" "pointback-20100210.752/" "paredit-24/" "page-break-lines-0.10/" "packed-20150723.438/" "noflet-20141102.654/" "neotree-0.2.1/" "mwe-log-commands-20100703.541/" "multiple-cursors-1.3.0/" "multi-term-20150220.1320/" "move-text-20140307.844/" "markdown-mode-2.0/" "lua-mode-20151025.530/" "link-1.10/" "less-css-mode-0.20/" "legalese-20100119.2148/" "kv-20140108.734/" "jump-2.3/" "json-rpc-20140602.806/" "json-mode-1.1.0/" "js2-mode-20150713/" "inflections-20121016.157/" "inf-ruby-20151104.1237/" "idomenu-20141123.1320/" "ibuffer-vc-0.10/" "htmlize-20130207.1202/" "hl-sexp-1.0.0/" "haskell-mode-13.14.2/" "haml-mode-3.1.9/" "guide-key-1.2.5/" "groovy-mode-20150725.1050/" "gitignore-mode-1.2.0/" "gitconfig-mode-20150330.1048/" "git-timemachine-2.7/" "git-link-0.2.1/" "git-gutter-0.83/" "ggtags-0.8.10/" "fringe-helper-1.0.1/" "flyspell-lazy-0.6.10/" "flymake-sass-0.6/" "flymake-ruby-0.8/" "flymake-python-pyflakes-0.9/" "flymake-lua-20140310.230/" "flymake-jslint-0.23/" "flymake-easy-0.10/" "flymake-css-0.3/" "flymake-coffee-0.12/" "flx-ido-0.5/" "flx-0.5/" "findr-20130824.507/" "fakir-20140729.952/" "f-0.17.2/" "expand-region-20150902.558/" "exec-path-from-shell-1.10/" "erlang-20151013.157/" "emmet-mode-1.0.8/" "dsvn-20130120.1257/" "dropdown-list-20120329.1636/" "dired-details-20130824.1158/" "dired+-20151110.921/" "diminish-0.44/" "dictionary-1.10/" "define-word-20150709.1223/" "dash-2.12.1/" "csharp-mode-20150815.552/" "crontab-mode-20090510.1355/" "cpputils-cmake-0.5.2/" "connection-1.10/" "company-c-headers-20150801.901/" "company-anaconda-20150525.215/" "company-0.8.12/" "color-theme-20080305.34/" "coffee-mode-0.6.1/" "cmake-mode-3.3.1/" "buffer-move-20150523.513/" "bookmark+-20150816.2012/" "bbdb-20150523.1239/" "avy-0.3.0/" "auto-compile-20151107.1408/" "archives/" "anaconda-mode-20150825.346/" "ace-window-0.9.0/" "../" "./")
+
+ ("/Users/Amelie/emacs2.d/" (22084 21466 0 0) "init.el~" "init.el" "auto-save-list/" "../" "./")
+
+ ("/Users/Amelie/GitHub/C++-Code/" (22084 20338 0 0) "5_2.C" "5.2" "5.1" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/GitHub/" (22083 47320 0 0) "emacs.d/" "CppPracticeCode/" "C++-Code/" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Documents/CambridgeInternship/C++-Code/" (22083 39071 0 0) "heapallocation.C" "5_2.C" "5.1" "../" "./")
+
+ ("/System/" (22056 4246 0 0) "Library/" ".localized" "../" "./")
+
+ ("/Users/" (22083 8410 0 0) "Shared/" "MacJunky/" "Amelie/" ".localized" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
