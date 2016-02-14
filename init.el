@@ -1,6 +1,7 @@
-(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-                        ("marmalade" . "https://marmalade-repo.org/packages/")
-			("melpa" . "https://melpa.org/packages/")))
+(setq package-archives '
+      (("gnu" . "https://elpa.gnu.org/packages/")
+       ("marmalade" . "https://marmalade-repo.org/packages/")
+       ("melpa" . "https://melpa.org/packages/")))
 (when (>= emacs-major-version 24))
 
  (setq package-enable-at-startup nil)
@@ -13,11 +14,14 @@
 (require 'ido)
 (ido-mode t)
 
-;(add-hook 'find-file-hook 'my-set-theme-on-mode)
 
 ;enable line numbers
 (global-linum-mode t)
 
+;;set line break to 80
+(setq-default fill-column 80)
+(add-hook 'text-mode-hook 'turn-on-auto-fill)	
+(add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
 
 ;differemt system settings					
 (defun system-is-mac ()
@@ -69,34 +73,64 @@
 (setq show-paren-style 'mixed) ; highlight entire expression
 
 
-(require 'fill-column-indicator)
-(define-globalized-minor-mode
- global-fci-mode fci-mode (lambda () (fci-mode 1)))
-(global-fci-mode t)
-
-; python-mode
-
-(require 'python-mode)
-
-; use IPython
-(setq-default py-shell-name "ipython")
-(setq-default py-which-bufname "IPython")
-; use the wx backend, for both mayavi and matplotlib
-(setq py-python-command-args
-  '("--gui=wx" "--pylab=wx" "-colors" "Linux"))
-(setq py-force-py-shell-name-p t)
-
-; switch to the interpreter after executing code
-(setq py-shell-switch-buffers-on-execute-p t)
-(setq py-switch-buffers-on-execute-p t)
-; don't split windows
-(setq py-split-windows-on-execute-p nil)
-; try to automagically figure out indentation
-(setq py-smart-indentation t)
+;; (require 'fill-column-indicator)
+;; (define-globalized-minor-mode
+;;  global-fci-mode fci-mode (lambda () (fci-mode 1)))
+;; (global-fci-mode t)
 
 ;; Yas snippet
 (require 'yasnippet)
 (yas-global-mode 1)
+
+
+; python-mode
+;; Mandatory
+(load-file "~/.emacs.d/emacs-for-python/epy-init.el")
+(add-to-list 'load-path "~/.emacs.d/emacs-for-python/") ;; tell where to load the various files
+
+;; Each of them enables different parts of the system.
+;; Only the first two are needed for pep8, syntax check.
+(require 'epy-setup) ;; It will setup other loads, it is required!
+(require 'epy-python) ;; If you want the python facilities [optional]
+(require 'epy-completion) ;; If you want the autocompletion settings [optional]
+(require 'epy-editing) ;; For configurations related to editing [optional]
+;; [newer version of emacs-for-python]
+(require 'epy-nose) ;; For shortcut to call nosetests [optional]
+
+;; Define f10 to previous error
+;; Define f11 to next error
+(require 'epy-bindings) ;; For my suggested keybindings [optional]
+
+;; Some shortcut that do not collide with gnome-terminal,
+;; otherwise, "epy-bindings" define f10 and f11 for them.
+(global-set-key [f2] 'flymake-goto-prev-error)
+(global-set-key [f3] 'flymake-goto-next-error)
+
+(require 'pep8)
+
+;; Next two lines are the checks to do. You can add more if you wish.
+(epy-setup-checker "pyflakes %f") ;; For python syntax check
+(epy-setup-checker "pep8 -r %f") ;; For pep8 check
+
+
+;; (require 'python-mode)
+
+;; ; use IPython
+;; (setq-default py-shell-name "ipython")
+;; (setq-default py-which-bufname "IPython")
+;; ; use the wx backend, for both mayavi and matplotlib
+;; (setq py-python-command-args
+;;   '("--gui=wx" "--pylab=wx" "-colors" "Linux"))
+;; (setq py-force-py-shell-name-p t)
+
+;; ; switch to the interpreter after executing code
+;; (setq py-shell-switch-buffers-on-execute-p t)
+;; (setq py-switch-buffers-on-execute-p t)
+;; ; don't split windows
+;; (setq py-split-windows-on-execute-p nil)
+;; ; try to automagically figure out indentation
+;; (setq py-smart-indentation t)
+
 
 
 
@@ -148,7 +182,17 @@
 ;;        (output-dvi "xdvi")
 ;;        (output-pdf "evince"
 ;; 		   (output-html "xdg-open"))))))
+(setq exec-path (append "/usr/local/bin" exec-path))
 
+(setq ispell-program-name "aspell")
+
+
+(setenv "DICTIONARY" "en_GB")
+
+ ;: SPELL CHECK
+(setq ispell-dictionary "british")
+(add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
   
 ;;   ;; C++ settings
   
@@ -168,10 +212,12 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("26ce7eea701bfd143ac536e6805224cff5598b75effb60f047878fe9c4833ae4" default))))
+    ("3ac266781ee0ac3aa74a6913a1506924cad669f111564507249f0ffa7c5e4b53" "26ce7eea701bfd143ac536e6805224cff5598b75effb60f047878fe9c4833ae4"
+    default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'upcase-region 'disabled nil)
