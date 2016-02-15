@@ -14,6 +14,8 @@
 (require 'ido)
 (ido-mode t)
 
+;; autopep8 configuration
+
 
 ;enable line numbers
 (global-linum-mode t)
@@ -221,3 +223,5 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'upcase-region 'disabled nil)
+
+require ()
