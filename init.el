@@ -1,7 +1,16 @@
+
+
 (setq package-archives '
       (("gnu" . "https://elpa.gnu.org/packages/")
        ("marmalade" . "https://marmalade-repo.org/packages/")
        ("melpa" . "https://melpa.org/packages/")))
+
+
+(package-initialize)
+(elpy-enable)
+
+(setenv "PYTHONPATH" "/usr/local/bin/python")
+
 (when (>= emacs-major-version 24))
 
  (setq package-enable-at-startup nil)
@@ -80,10 +89,27 @@
 ;;  global-fci-mode fci-mode (lambda () (fci-mode 1)))
 ;; (global-fci-mode t)
 
+;; ansi-term 
+(defun visit-term-buffer ()
+  "Create or visit a terminal buffer."
+  (interactive)
+  (if (not (get-buffer "*ansi-term*"))
+      (progn
+        (split-window-sensibly (selected-window))
+        (other-window 1)
+        (ansi-term (getenv "SHELL")))
+    (switch-to-buffer-other-window "*ansi-term*")))
+
+(global-set-key (kbd "C-c t") 'visit-term-buffer)
+
 ;; Yas snippet
 (require 'yasnippet)
 (yas-global-mode 1)
+(add-hook 'term-mode-hook (lambda()
+			    (setq yas-dont-activate t)))
 
+;; Magit
+(global-set-key (kbd "C-x g") 'magit-status)
 
 ; python-mode
 ;; Mandatory
