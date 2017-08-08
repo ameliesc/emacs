@@ -1,0 +1,273 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/Amelie/Projects/python/usefulfunctions/" . "usefulfunc/")
+ ("/Users/Amelie/orgfiles/" . "gtd/")
+ ("/Users/Amelie/.emacs.d/" . "emacs-for-python/")
+ ("/Users/Amelie/Library/" . "KeyBindings/")
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/buildalisp/" . "src/")
+ ("/Users/Amelie/Projects/python/brainreader/brainreader/" . "kernel_ridge/")
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masterentry/static/" . "css/")
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/home/templates/" . "home/")
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/home/" . "templates/")
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masterentry/templates/" . "masterentry/")
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masterentry/" . "templates/")
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/" . "masterentry/")
+ ("/Users/Amelie/Projects/python/django/groupassignment/" . "our-awesome-website/")
+ ("/Users/Amelie/Projects/python/django/" . "groupassignment/")
+ ("/Users/Amelie/Projects/python/brainreader/" . "brainreader/")
+ ("/Users/Amelie/Projects/python/" . "usefulfunctions/")
+ ("/Users/Amelie/Projects/" . "python/")
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/elise/" . "parse-arithmetic/")
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/maxg/" . "python-style/")
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/" . "elise/")
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/" . "buildalisp/")
+ ("/Users/Amelie/Documents/AUC/Sem6/" . "advprog/")
+ ("/Users/Amelie/Documents/AUC/Sen6/assignment3/" . "otp2/")
+ ("/Users/Amelie/Documents/AUC/Sen6/" . "otp2/")
+ ("/Users/Amelie/Documents/Capstone/" . "researchprop/")
+ ("/Users/Amelie/exercism/cpp/" . "bob/")
+ ("/Users/Amelie/exercism/" . "cpp/")
+ ("/Users/Amelie/Documents/AUC/" . "Sem6/")
+ ("/Users/Amelie/GitHub/" . "CppPracticeCode/")
+ ("/sudo:root@localhost:/Users/" . "Amelie/")
+ ("/sudo:root@localhost:/Users/Amelie/" . ".emacs.d/")
+ ("/sudo:root@localhost:/Users/Amelie/Documents/" . "AUC/")
+ ("/Users/Amelie/Documents/AUC/Sem5/" . "AdResearchWr/")
+ ("/Users/Amelie/Documents/CambridgeInternship/" . "Lab 6/")
+ ("/Users/Amelie/Documents/" . "AUC/")
+ ("/Users/Amelie/" . "Projects/")
+ ("/Users/" . "Amelie/")
+ ("/" . "Users/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/Amelie/Projects/python/"
+ "/Users/Amelie/orgfiles/gtd/"
+ "/Users/Amelie/Projects/python/usefulfunctions/"
+ "/Users/Amelie/.emacs.d/"
+ "/"
+ "/Users/Amelie/Library/KeyBindings/"
+ "/Users/Amelie/Documents/AUC/Sem6/advprog/buildalisp/src/"
+ "/Users/Amelie/Documents/AUC/Sem6/advprog/buildalisp/"
+ "/Users/Amelie/Documents/AUC/Sem6/advprog/buildalisp/ch4/"
+ "/Users/Amelie/Projects/python/brainreader/brainreader/"
+ "/Users/Amelie/Documents/Capstone/"
+ "/Users/Amelie/Documents/Capstone/researchprop/"
+ "/Users/Amelie/Projects/python/brainreader/brainreader/kernel_ridge/"
+ "/Users/Amelie/Documents/AUC/Sem6/advprog/"
+ "/Users/Amelie/Documents/AUC/Sem6/advprog/hello.c/"
+ "/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masterentry/"
+ "/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masterentry/templates/masterentry/"
+ "/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/login/"
+ "/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masters_website/"
+ "/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/home/"
+ "/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masterentry/static/css/"
+ "/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/home/templates/home/"
+ "/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/elise/parse-arithmetic/"
+ "/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/maxg/python-style/"
+ "/Users/Amelie/Documents/CambridgeInternship/"
+ "/Users/Amelie/Documents/AUC/Sen6/otp2/"
+ "/Users/Amelie/Documents/otp2/"
+ "/Users/Amelie/Documents/AUC/Sen6/assignment3/otp2/"
+ "/Users/Amelie/Documents/AUC/Sen6/assignment3/otp/"
+ "/Users/Amelie/Documents/"
+ "/Users/Amelie/Documents/Capstone/Code/"
+ "/Users/Amelie/Documents/tensorflowtut/"
+ "/Users/Amelie/Documents/AUC/Sen6/"
+ "/Users/Amelie/Documents/theanotut/"
+ "/Users/Amelie/exercism/cpp/bob/"
+ "/Users/Amelie/Documents/CambridgeInternship/Lab 6/"
+ "/Users/Amelie/Documents/AUC/Sem5/AdResearchWr/"
+ "/sudo:root@localhost:/Users/Amelie/.emacs.d/"
+ "/sudo:root@localhost:/Users/Amelie/.emacs.d/lisp/"
+ "/sudo:root@localhost:/Users/Amelie/Documents/AUC/Sem5/AdResearchWr/"
+ "/sudo:root@localhost:/Users/Amelie/Documents/AUC/"
+ "/Users/Amelie/.emacs.d/lisp/"
+ "/Users/Amelie/.emacs.d/misc/"
+ "/Users/Amelie/Documents/AUC/AdResearchWr/"
+ "/Users/Amelie/GitHub/C++-Code/"
+ "/Users/Amelie/Documents/CambridgeInternship/C++-Code/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "python_notes.org"
+ "tasks.org"
+ "checkinmoves.py"
+ "init.el"
+ ".com.apple.timemachine.donotpresent"
+ "DefaultKeyBinding.dict"
+ "error_handling.c"
+ "parser.c"
+ "polishnotation.c"
+ "userprompt.c"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/Amelie/Projects/python/usefulfunctions/usefulfunc/" (22876 37090 0 0) "pip-selfcheck.json" "lib/" "include/" "bin/" ".Python" "../" "./")
+
+ ("/Users/Amelie/Projects/python/usefulfunctions/" (22881 50134 0 0) "usefulfunc/" "checkinmoves.py~" "checkinmoves.py" "../" "./")
+
+ ("/Users/Amelie/Projects/python/" (22901 57234 0 0) "usefulfunctions/" "tfpractice/" "python_notes.org~" "python_notes.org" "practicecode/" "django/" "cnn3/" "cnn2/" "brainreader/" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Projects/" (22901 51263 0 0) "todos.org~" "todos.org" "startbootstrap-small-business-1.0.4/" "SQL/" "racket/" "python/" "myelpa/" "matlab/" "kaggel/" "cpp/" "coursesera_webdev/" "agenda.org~" "agenda.org" ".DS_Store" ".#todos.org" ".#gtd.org" "#todos.org#" "#gtd.org#" "../" "./")
+
+ ("/Users/Amelie/projs/" (22238 65250 0 0) ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/orgfiles/gtd/" (22919 61107 0 0) "tasks.org~" "tasks.org" ".#tasks.org" "#tasks.org#" "../" "./")
+
+ ("/Users/Amelie/orgfiles/" (22904 15187 0 0) "tensorflowfunctions.org" "gtd/" ".DS_Store" ".#tensorflowfunctions.org" "#tensorflowfunctions.org#" "../" "./")
+
+ ("/Users/Amelie/" (22904 19022 0 0) "VirtualBox VMs/" "test.tex" "test.sh~" "test.sh" "test.py" "tensorflow3/" "tensorflow/" "Sites/" "SCHMIDT COLBERG_AMELIE 22FEB2015 FRA ICN.rtf" "recommendation/" "Public/" "projs/" "Projects/" "Pictures/" "orgfiles/" "Notes/" "nltk_data/" "News/" "Music/" "Movies/" "Library/" "java.log.12681" "Google Drive/" "GitHub/" "exercism/" "Downloads/" "Documents/" "Desktop/" "bin/" "Applications/" "Answer to your request_ Request Off-campus course (reference number AC1510 5020).rtf" ".zshrc" ".zshenv" ".zsh" ".zprofile" ".zpreztorc" ".zplug" ".zlogout" ".zlogin" ".Xmodmap" ".Xauthority" ".vimrc" ".viminfo" ".vim" ".Trash/" ".tmux.conf" ".tmux" ".theanorc" ".theano/" ".subversion/" ".ssh/" ".sqlite_history" ".smex-items" ".serverauth.2122" ".screenrc" ".rnd" ".pythonrc.py" ".python_history" ".oracle_jre_usage/" ".npm/" ".notes" ".mplayer/" ".matplotlib/" ".matlab/" ".local/" ".lesshst" ".ipython/" ".gtkrc-2.0" ".gnus~" ".gnuplot_history" ".gitignore" ".gitconfig" ".gem/" ".fzf.zsh" ".fzf.bash" ".fzf/" ".freemind/" ".exercism.json" ".emacs_SHELLNAME" ".emacs.keyfreq" ".emacs.d/" ".DS_Store" ".docker/" ".deepdish.conf" ".cups/" ".continuum/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc~" ".bashrc" ".bash_sessions/" ".bash_profile~" ".bash_profile.pysave" ".bash_profile-anaconda.bak" ".bash_profile" ".bash_login" ".bash_history" ".backups/" ".authinfo~" ".authinfo" ".aspell.en.pws" ".aspell.en.prepl" ".#.#.authinfo.gpg" "*scratch*~" "*scratch*" "*message*-20170606-184833" "*message*-20170606-155615~" "*message*-20170606-155615" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/" (22896 26386 0 0) "tramp" "request/" "recentf" "init.el~" "init.el" "ido.last~" "ido.last" "eproject.lst" "emacs-for-python/" "elpa/" "company-statistics-cache.el" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".session" ".gitignore~" ".gitignore" ".git/" ".DS_Store" ".#init.el" "%backup%~" "#init.el#" "../" "./")
+
+ ("/Users/" (22595 44956 0 0) "Shared/" "Amelie/" ".localized" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/emacs-for-python/" (22844 51816 0 0) "snippets/" "scripts/" "README.org" "python-libs/" "extensions/" "epy-setup.el" "epy-python.el" "epy-nose.el" "epy-init.el" "epy-editing.el" "epy-completion.el" "epy-bindings.el" "doc/" "COPYING" "CONTRIBUTORS" "ChangeLog" ".gitignore" ".git/" "#epy-python.el#" "../" "./")
+
+ ("/Users/Amelie/Projects/python/tfpractice/" (22874 5022 0 0) "udacity_google/" "test.sh" "tensorflow/" "setup.sh" "requirements.txt" "README.md" "myvenv/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/Amelie/Library/KeyBindings/" (22278 20622 0 0) "DefaultKeyBinding.dict~" "DefaultKeyBinding.dict" "../" "./")
+
+ ("/Users/Amelie/Documents/" (22428 45749 0 0) "~$elie Schmidt.docx" "~$drschapter1.docx" "~$-explained.docx" "theanotut/" "Tae Guk Gi The Brotherhood of War (2004) BluRay 1080p 5.1CH x264 SmallAndHD/" "recursiontrace.rkt~" "recursiontrace.rkt" "paperswantread/" "OsiriX Data/" "neural-coding-old/" "MATLAB/" "Lebenslauf deutsch.docx" "Jerichow (eng subs)  [2008] Christian Petzold/" "Harry Potter Audio Books 1-7; Read by Stephen Fry [MP3]/" "GLpresent.pptx" "formaldocuments/" "fast_sc/" "Complete Pimsleur Korean I + II/" "cnn_exercise/" "CambridgeInternship/" "AUC/" "Anki/" "A.Violent.Prosecutor.2016.Korean.720p.HDRip.800MB-Ganool/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Documents/CambridgeInternship/" (22356 6665 0 0) "report.tex~" "report.tex" "report.pdf" "report.log" "report.blg" "report.bib~" "report.bib" "report.bbl" "report.aux" "prv_report.pdf" "prv_report.log" "primeministe.tex" "PracticalSolutions/" "Lab9_1.C" "Lab7.C" "Lab 6/" "Lab 5/" "Lab 3/" "figure3.png" "figure2.png" "figure1.png" "contacts.tex" "C++ Practicals/" "C++ Lectures/" "_region_.tex" "_region_.prv/" "_region_.log" "9.1" "8_2.H" "8_2.C" "8_1.H" "8_1.C" "8.2" "7.1" "2layer.png" "11_1.C" "11.1" "10_2.C" "10_1.C" "10.2" "10.1" ".DS_Store" "#report.bib#" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/" (22391 64107 0 0) "variables.rkt~" "variables/" "Untitled.rkt" "switch.C~" "switch.C" "suminteger.c" "structures.C~" "structures.C" "strings.C" "racket/" "python-style/" "python-guide/" "python/" "pointers.C~" "pointers.C" "peereview/" "peer-review/" "parse-arithmetic/" "otp2/" "ones_zeros.c~" "ones_zeros.c" "nand2tetris/" "max.C" "marieke.rkt~" "marieke.rkt" "hello1.c" "hello.c/" "haystack.C" "functions.C~" "functions.C" "float.c" "doubling_time.C~" "doubling_time.C" "doubling" "datasize.c~" "datasize.c" "code/" "chapter6.rtf" "Chapter 2.docx" "ch7/" "buildalisp1/" "buildalisp/" "a.out" "../" "./")
+
+ ("/Users/Amelie/Projects/python/brainreader/brainreader/" (22341 38350 0 0) "zero_layer_deconv.py~" "zero_layer_deconv.py" "weight_deonvnet.py~" "weight_deonvnet.py" "vim-1/" "vgg-s-networkstruct.py~" "verify.sh" "unwrap_deconvnet.py~" "unwrap_deconvnet.pyc" "unwrap_deconvnet.py" "unpooler.py~" "unpooler.pyc" "test.h5" "Stimuli.mat" "solve_for_lambda.py~~" "solve_for_lambda.py~" "solve_for_lambda.pyc" "solve_for_lambda.py" "scikitregressors.py~" "scikitregressors.py" "save.p" "regressionvalues.txt" "regressiontheano.py~" "regressiontheano.pyc" "regressiontheano.py" "regressionridgev2.py~" "regressionridgev2.pyc" "regressionridgev2.py" "regression_features.py~" "regression_featureobo.py~" "regression_featureobo.py" "regression_cost_roi7_fc8.h5" "regression_cost_roi7_fc7.h5" "regression_cost_roi7_fc6.h5" "regression_cost_roi6_fc8.h5" "regression_cost_roi6_fc7.h5" "regression_cost_roi6_fc6.h5" "regression_cost_roi6_conv5_4.h5" "regression_cost_roi5_fc8.h5" "regression_cost_roi5_fc7.h5" "regression_cost_roi5_fc6.h5" "regression_cost_roi5_conv5_4.h5" "regression_cost_roi4_fc8.h5" "regression_cost_roi4_fc7.h5" "regression_cost_roi4_fc6.h5" "regression_cost_roi4_conv5_4.h5" "regression_cost_roi3_fc8.h5" "regression_cost_roi3_fc7.h5" "regression_cost_roi3_fc6.h5" "regression_cost_roi3_conv5_4.h5" "regression_cost_roi2_fc8.h5" "regression_cost_roi2_fc7.h5" "regression_cost_roi2_fc6.h5" "regression_cost_roi2_conv5_4.h5" "regression_cost_roi1_fc8.h5" "regression_cost_roi1_fc7.h5" "regression_cost_roi1_fc6.h5" "regression_cost_roi1_conv5_4.h5" "regression_cost_fc.h5" "regression_cost.h5" "regression_coefficients_roi7_fc8.h5" "regression_coefficients_roi7_fc7.h5" "regression_coefficients_roi7_fc6.h5" "regression_coefficients_roi6_fc8.h5" "regression_coefficients_roi6_fc7.h5" "regression_coefficients_roi6_fc6.h5" "regression_coefficients_roi6_conv5_4.h5" "regression_coefficients_roi5_fc8.h5" "regression_coefficients_roi5_fc7.h5" "regression_coefficients_roi5_fc6.h5" "regression_coefficients_roi5_conv5_4.h5" "regression_coefficients_roi4_fc8.h5" "regression_coefficients_roi4_fc7.h5" "regression_coefficients_roi4_fc6.h5" "regression_coefficients_roi4_conv5_4.h5" "regression_coefficients_roi3_fc8.h5" "regression_coefficients_roi3_fc7.h5" "regression_coefficients_roi3_fc6.h5" "regression_coefficients_roi3_conv5_4.h5" "regression_coefficients_roi2_fc8.h5" "regression_coefficients_roi2_fc7.h5" "regression_coefficients_roi2_fc6.h5" "regression_coefficients_roi2_conv5_4.h5" "regression_coefficients_roi1_fc8.h5" "regression_coefficients_roi1_fc7.h5" "regression_coefficients_roi1_fc6.h5" "regression_coefficients_roi1_conv5_4.h5" "regression_coefficients_fc.h5" "regression_coefficients.h5" "regression_brainreader.py~" "regression_brainreader.py" "region_coef.h5" "refitmodel.py~" "refitmodel.py" "printnetwork.py~" "printnetwork.pyc" "printnetwork.py" "printlayers.py~" "printlayers.pyc" "printlayers.py" "pretrained_networks.pyc" "pretrained_networks.py" "onlineridge_steps.py~" "onlineridge_steps.py" "onlineridge_lowerlayers.py~" "onlineridge_lowerlayers.py" "onlineridge_batched.py~" "onlineridge_batched.py" "onlineridge_adams.py~" "onlineridge_adams.py" "onlineridge.py~" "onlineridge.py" "onlinergression_adams.py~" "onlinergression_adams.pyc" "onlinergression_adams.py" "online_ridgev3.py~" "online_ridgev3.py" "online_ridgev2.py~" "online_ridgev2.py" "mykernelridge.py~" "mykernelridge.py" "max_voxel.py~" "max_voxel.py" "makedeconvnet.py~" "makedeconvnet.pyc" "makedeconvnet.py" "kernelridge.py~" "kernel_ridge/" "initialcost.py~" "initialcost.py" "glmnet/" "featuremaps_train_conv1_1.h5" "featuremaps_test_conv5_4.h5" "featuremaps_test_conv1_1.h5" "EstimatedResponses.mat" "download.sh" "demo_brainreader.pyc" "demo_brainreader.py" "deconvnetwork.p" "deconvnets.py~" "deconvnets.pyc" "deconvnets.py" "data_preprocessing.py~" "data_preprocessing.pyc" "data_preprocessing.py" "create_switches.py~" "create_switches.pyc" "create_switches.py" "crcns-account.txt" "cost/" "cookie.txt" "convolution_regresion_script.m" "convnets.pyc" "convnets.py" "conv_reg_deconv.py~" "conv_featurestest.py~" "conv_featurestest.py" "conv_featuresfull.py~" "conv_featuresfull.py" "conv_features.py~" "conv_features.py" "conv_deconv_demo.py~" "conv_deconv_demo.py" "conv_and_regression.py~" "conv_and_regression.py" "coef/" "art_gallery.pyc" "art_gallery.py" "analyse.py~" "analyse.pyc" "analyse.py" "adagrad.py~" "adagrad.pyc" "adagrad.py" "__init__.pyc" "__init__.py" ".gitignore" ".DS_Store" ".#weight_deonvnet.py" ".#solve_for_lambda.py" ".#onlineridge_lowerlayers.py" ".#demo_brainreader.py" ".#create_switches.py" ".#conv_features.py" ".#analyse.py" "#zero_layer_deconv.py#" "#weight_deonvnet.py#" "#solve_for_lambda.py#" "#printnetwork.py#" "#onlineridge_lowerlayers.py#" "#demo_brainreader.py#" "#create_switches.py#" "#convolutionstep.py#" "#conv_features.py#" "#conv_and_regression.py#" "#analyse.py#" " .pdf" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/buildalisp/ch4/" (22330 57712 0 0) "userprompt.c" "userprompt" "prompt_unix.c" "prompt.c~" "prompt.c" "prompt" "polishnotation.c~" "polishnotation.c" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/buildalisp/src/" (22347 3981 0 0) "variables.c" "variables" "variable" "strings.c" "s_expressions.c" "s_exp" "q_expressions.c" "q_exp" "prompt_windows.c" "prompt_unix.c" "prompt.c" "prelude.lspy" "parsing.c" "mpc.h" "mpc.c" "Makefile" "hello_world.lspy" "hello_world.c" "functions.c" "evaluation.c" "evaluation" "evalcrash.dSYM/" "evalcrash" "error_handling.c" "error" "doge_grammar.c" "doge_code.c" "conditionals.c" "../" "./")
+
+ ("/Users/Amelie/Library/" (22390 41836 0 0) "WebKit/" "Voices/" "VirtualBox/" "TeXShop/" "texlive/" "SyncedPreferences/" "Suggestions/" "Spelling/" "Sounds/" "Services/" "Screen Savers/" "Saved Application State/" "Safari/" "Racket/" "Python/" "PubSub/" "Printers/" "Preferences/" "PreferencePanes/" "Mobile Documents/" "mixpanel-ea416d3e02246452422511b79ae9283f-events.plist" "Metadata/" "Messages/" "Mail/" "Logs/" "LaunchAgents/" "LanguageModeling/" "Keychains/" "Keyboard Layouts/" "KeyBindings/" "iTunes/" "Internet Plug-Ins/" "Input Methods/" "iMovie/" "IdentityServices/" "Group Containers/" "Google/" "GameKit/" "Fonts/" "FontCollections/" "Favorites/" "Dictionaries/" "Developer/" "CoreFollowUp/" "CoreData/" "Cookies/" "Containers/" "Compositions/" "com.apple.nsurlsessiond/" "ColorSync/" "Colors/" "ColorPickers/" "Calendars/" "Caches/" "BlueStacks/" "Autosave Information/" "Audio/" "Assistants/" "Application Support/" "Application Scripts/" "Address Book Plug-Ins/" "Accounts/" ".localized" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/buildalisp/" (22331 30441 0 0) "static/" "src/" "splash.html" "source.tar.gz" "README.md" "purchase.html" "mpc_lisp.wsgi" "lispy.py" "LICENSE.md" "invalid.html" "faq.html" "error.log" "download.html" "credits.html" "contents.html" "chapter9_s_expressions.html" "chapter8_error_handling.html" "chapter7_evaluation.html" "chapter6_parsing.html" "chapter5_languages.html" "chapter4_interactive_prompt.html" "chapter3_basics.html" "chapter2_installation.html" "chapter1_introduction.html" "chapter16_bonus_projects.html" "chapter15_standard_library.html" "chapter14_strings.html" "chapter13_conditionals.html" "chapter12_functions.html" "chapter11_variables.html" "chapter10_q_expressions.html" "ch7/" "ch6/" "ch5/" "ch4/" "ch3/" "ch2/" "ch1/" "404.html" ".gitignore" ".gitattributes" ".git/" "../" "./")
+
+ ("/Users/Amelie/Documents/Capstone/" (22319 9295 0 0) "test_unzero_pool1.png" "test2.png" "test1.png" "researchprop/" "pool2_wo_weights_image9_max_act_zeroed.png" "pool2_wo_weights_image8_max_act_zeroed.png" "pool2_wo_weights_image7_max_act_zeroed.png" "pool2_wo_weights_image6_max_act_zeroed.png" "pool2_wo_weights_image5_max_act_zeroed.png" "pool2_wo_weights_image4_max_act_zeroed.png" "pool2_wo_weights_image3_max_act_zeroed.png" "pool2_wo_weights_image2_max_act_zeroed.png" "pool2_wo_weights_image1_max_act_zeroed.png" "pool2_wo_weights_image0_max_act_zeroed.png" "pool1_wo_weights.png" "Paper/" "n_voxels.png" "mincost.png" "final.tex~" "final.tex" "final.pdf" "final.log" "final.blg" "final.bbl" "final.aux" "fc8_7_image9_voxel670.png" "fc8_7_image8_voxel670.png" "fc8_7_image7_voxel670.png" "fc8_7_image6_voxel670.png" "fc8_7_image5_voxel670.png" "fc8_7_image4_voxel670.png" "fc8_7_image3_voxel670.png" "fc8_7_image2_voxel670.png" "fc8_7_image1_voxel670.png" "fc8_6_image8_voxel535.png" "fc8_6_image7_voxel535.png" "fc8_6_image6_voxel535.png" "fc8_6_image5_voxel535.png" "fc8_6_image4_voxel535.png" "fc8_6_image3_voxel535.png" "fc8_6_image2_voxel535.png" "fc8_6_image1_voxel535.png" "fc8_6_image0_voxel535.png" "fc7_wo_weights_image9_max_act_zeroed.png" "fc7_wo_weights_image8_max_act_zeroed.png" "fc7_wo_weights_image7_max_act_zeroed.png" "fc7_wo_weights_image6_max_act_zeroed.png" "fc7_wo_weights_image5_max_act_zeroed.png" "fc7_wo_weights_image4_max_act_zeroed.png" "fc7_wo_weights_image3_max_act_zeroed.png" "fc7_wo_weights_image2_max_act_zeroed.png" "fc7_wo_weights_image1_max_act_zeroed.png" "fc7_wo_weights_image0_max_act_zeroed.png" "fc7_wo_weights.pdf" "fc7_7_image9_voxel157.png" "fc7_7_image8_voxel157.png" "fc7_7_image7_voxel157.png" "fc7_7_image6_voxel157.png" "fc7_7_image5_voxel157.png" "fc7_7_image4_voxel157.png" "fc7_7_image3_voxel157.png" "fc7_7_image2_voxel157.png" "fc7_7_image1_voxel157.png" "fc7_7_image0_voxel157.png" "fc7_6_image6_voxel582.png" "fc7_6_image5_voxel582.png" "fc7_6_image4_voxel582.png" "fc7_6_image3_voxel582.png" "fc7_6_image2_voxel582.png" "fc7_6_image1_voxel582.png" "fc7_6_image0_voxel582.png" "fc6_wo_weights_zeroed.png" "fc6_wo_weights_image7_max_act_zeroed.png" "fc6_wo_weights_image6_max_act_zeroed.png" "fc6_wo_weights_image5_max_act_zeroed.png" "fc6_wo_weights_image4_max_act_zeroed.png" "fc6_wo_weights_image3_max_act_zeroed.png" "fc6_wo_weights_image2_max_act_zeroed.png" "fc6_wo_weights_image1_max_act_zeroed.png" "fc6_wo_weights_image0_max_act_zeroed.png" "fc6_wo_weights_image0_max_act.png" "fc6_wo_weights.pdf" "fc6_with_weights_zeroed.png" "fc6_7.pdf" "fc6_6_image9_voxel582.png" "fc6_6_image8_voxel582.png" "fc6_6_image7_voxel582.png" "fc6_6_image7_maxvoxel1168.png" "fc6_6_image6_voxel582.png" "fc6_6_image6_maxvoxel1168.png" "fc6_6_image5_voxel582.png" "fc6_6_image5_maxvoxel1168.png" "fc6_6_image535.png" "fc6_6_image4_voxel582.png" "fc6_6_image4_maxvoxel1168.png" "fc6_6_image3_voxel582.png" "fc6_6_image3_maxvoxel1168.png" "fc6_6_image2_voxel582.png" "fc6_6_image2_maxvoxel1168.png" "fc6_6_image1_voxel582_weight_nonzero.png" "fc6_6_image1_voxel582.png" "fc6_6_image1_maxvoxel1168.png" "fc6_6_image0_voxel885_corrected.png" "fc6_6_image0_voxel885.png" "fc6_6_image0_voxel690_corrected.png" "fc6_6_image0_voxel690.png" "fc6_6_image0_voxel582_weight_nonzero.png" "fc6_6_image0_voxel582_corrected.png" "fc6_6_image0_voxel582.png" "fc6_6_image0_voxel535_corrected.png" "fc6_6_image0_voxel535.png" "fc6_6_image0_maxvoxel1168.png" "fc6_6.pdf" "fc6_2_image9_voxel559.png" "fc6_2_image8_voxel559.png" "fc6_2_image7_voxel559.png" "fc6_2_image6_voxel559.png" "fc6_2_image5_voxel559.png" "fc6_2_image4_voxel559.png" "fc6_2_image3_voxel559.png" "fc6_2_image2_voxel559.png" "fc6_2_image1_voxel559.png" "fc6_2_image0_voxel559.png" "fc6_2.pdf" "fc6_1_image9_voxel250.png" "fc6_1_image8_voxel250.png" "fc6_1_image7_voxel250.png" "fc6_1_image6_voxel250.png" "fc6_1_image5_voxel250.png" "fc6_1_image4_voxel250.png" "fc6_1_image3_voxel250.png" "fc6_1_image2_voxel250.png" "fc6_1_image1_voxel250.png" "fc6_1_image0_voxel250.png" "fc6_1.pdf" "Data/" "conv5_4_wo_weights_image9_max_act_zeroed.png" "conv5_4_wo_weights_image8_max_act_zeroed.png" "conv5_4_wo_weights_image7_max_act_zeroed.png" "conv5_4_wo_weights_image6_max_act_zeroed.png" "conv5_4_wo_weights_image5_max_act_zeroed.png" "conv5_4_wo_weights_image4_max_act_zeroed.png" "conv5_4_wo_weights_image3_max_act_zeroed.png" "conv5_4_wo_weights_image2_max_act_zeroed.png" "conv5_4_wo_weights_image1_max_act_zeroed.png" "conv5_4_wo_weights_image0_max_act_zeroed.png" "conv5_1_wo_weights_image9_max_act_zeroed.png" "conv5_1_wo_weights_image9_max_act_notzeroed.png" "conv5_1_wo_weights_image8_max_act_zeroed.png" "conv5_1_wo_weights_image8_max_act_notzeroed.png" "conv5_1_wo_weights_image7_max_act_zeroed.png" "conv5_1_wo_weights_image7_max_act_notzeroed.png" "conv5_1_wo_weights_image6_max_act_zeroed.png" "conv5_1_wo_weights_image6_max_act_notzeroed.png" "conv5_1_wo_weights_image5_max_act_zeroed.png" "conv5_1_wo_weights_image5_max_act_notzeroed.png" "conv5_1_wo_weights_image4_max_act_zeroed.png" "conv5_1_wo_weights_image4_max_act_notzeroed.png" "conv5_1_wo_weights_image3_max_act_zeroed.png" "conv5_1_wo_weights_image3_max_act_notzeroed.png" "conv5_1_wo_weights_image2_max_act_zeroed.png" "conv5_1_wo_weights_image2_max_act_notzeroed.png" "conv5_1_wo_weights_image1_max_act_zeroed.png" "conv5_1_wo_weights_image1_max_act_notzeroed.png" "conv5_1_wo_weights_image0_max_act_zeroed.png" "conv5_1_wo_weights_image0_max_act_notzeroed.png" "conv4_1_wo_weights_image9_max_act_zeroed.png" "conv4_1_wo_weights_image8_max_act_zeroed.png" "conv4_1_wo_weights_image7_max_act_zeroed.png" "conv4_1_wo_weights_image6_max_act_zeroed.png" "conv4_1_wo_weights_image5_max_act_zeroed.png" "conv4_1_wo_weights_image4_max_act_zeroed.png" "conv4_1_wo_weights_image3_max_act_zeroed.png" "conv4_1_wo_weights_image2_max_act_zeroed.png" "conv4_1_wo_weights_image1_max_act_zeroed.png" "conv4_1_wo_weights_image0_max_act_zeroed.png" "conv3_1_wo_weights_image9_max_act_zeroed.png" "conv3_1_wo_weights_image8_max_act_zeroed.png" "conv3_1_wo_weights_image7_max_act_zeroed.png" "conv3_1_wo_weights_image6_max_act_zeroed.png" "conv3_1_wo_weights_image5_max_act_zeroed.png" "conv3_1_wo_weights_image4_max_act_zeroed.png" "conv3_1_wo_weights_image3_max_act_zeroed.png" "conv3_1_wo_weights_image2_max_act_zeroed.png" "conv3_1_wo_weights_image1_max_act_zeroed.png" "conv3_1_wo_weights_image0_max_act_zeroed.png" "conv2_1_wo_weights_image9_max_act_zeroed.png" "conv2_1_wo_weights_image9_max_act_notzeroed.png" "conv2_1_wo_weights_image8_max_act_zeroed.png" "conv2_1_wo_weights_image8_max_act_notzeroed.png" "conv2_1_wo_weights_image7_max_act_zeroed.png" "conv2_1_wo_weights_image7_max_act_notzeroed.png" "conv2_1_wo_weights_image6_max_act_zeroed.png" "conv2_1_wo_weights_image6_max_act_notzeroed.png" "conv2_1_wo_weights_image5_max_act_zeroed.png" "conv2_1_wo_weights_image5_max_act_notzeroed.png" "conv2_1_wo_weights_image4_max_act_zeroed.png" "conv2_1_wo_weights_image4_max_act_notzeroed.png" "conv2_1_wo_weights_image3_max_act_zeroed.png" "conv2_1_wo_weights_image3_max_act_notzeroed.png" "conv2_1_wo_weights_image2_max_act_zeroed.png" "conv2_1_wo_weights_image2_max_act_notzeroed.png" "conv2_1_wo_weights_image1_max_act_zeroed.png" "conv2_1_wo_weights_image1_max_act_notzeroed.png" "conv2_1_wo_weights_image0_max_act_zeroed.png" "conv2_1_wo_weights_image0_max_act_notzeroed.png" "conv1_1_wo_weights_image9_max_act_zeroed.png" "conv1_1_wo_weights_image9_max_act_notzeroed.png" "conv1_1_wo_weights_image8_max_act_zeroed.png" "conv1_1_wo_weights_image8_max_act_notzeroed.png" "conv1_1_wo_weights_image7_max_act_zeroed.png" "conv1_1_wo_weights_image7_max_act_notzeroed.png" "conv1_1_wo_weights_image6_max_act_zeroed.png" "conv1_1_wo_weights_image6_max_act_notzeroed.png" "conv1_1_wo_weights_image5_max_act_zeroed.png" "conv1_1_wo_weights_image5_max_act_notzeroed.png" "conv1_1_wo_weights_image4_max_act_zeroed.png" "conv1_1_wo_weights_image4_max_act_notzeroed.png" "conv1_1_wo_weights_image3_max_act_zeroed.png" "conv1_1_wo_weights_image3_max_act_notzeroed.png" "conv1_1_wo_weights_image2_max_act_zeroed.png" "conv1_1_wo_weights_image2_max_act_notzeroed.png" "conv1_1_wo_weights_image1_max_act_zeroed.png" "conv1_1_wo_weights_image1_max_act_notzeroed.png" "conv1_1_wo_weights_image0_max_act_zeroed.png" "conv1_1_wo_weights_image0_max_act_notzeroed.png" "Code/" "avcost.png" "all3d.png" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Documents/Capstone/researchprop/" (22238 64548 0 0) "researchproposal.tex~" "researchproposal.tex" "researchproposal.pdf" "researchproposal.log" "researchproposal.blg" "researchproposal.bib~" "researchproposal.bib" "researchproposal.bbl" "researchproposal.aux" "decovmethod2.png" "decovm2.jpg" "decovm1.png" "covenetfeatures.jpg" "../" "./")
+
+ ("/Users/Amelie/Projects/python/brainreader/brainreader/kernel_ridge/" (22299 34448 0 0) "solve_df_for_lambda.m" "kernel_ridge.m" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/hello.c/" (22296 51402 0 0) "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/home/templates/home/" (22291 30443 0 0) "home.html" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masterentry/static/css/" (22291 59003 0 0) "masterentry.css" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/home/" (22291 27621 0 0) "views.py" "urls.py" "templates/" "static/" "__pycache__/" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/login/" (22291 59130 0 0) "views.py" "urls.py" "tests.py" "templates/" "register.html" "models.py" "migrations/" "forms.py" "apps.py" "admin.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masterentry/templates/masterentry/" (22291 59003 0 0) "masterentries.html" "base.html~" "base.html" "add_master.html~" "add_master.html" "#masterentries.html#" "#base.html#" "../" "./")
+
+ ("/Users/Amelie/Projects/python/brainreader/" (22292 59658 0 0) "venv/" "test.mat" "source" "setup.sh" "setup.cfg" "requirements.txt" "README.md" "brainreader/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/" (22291 28288 0 0) "venv/" "setup.sh" "setup.cfg" "requirements.txt" "README.md" "masters_website/" "masterentry/" "manage.py" "login/" "home/" "db.sqlite3" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masters_website/" (22291 28029 0 0) "wsgi.py" "urls.py" "settings.py" "__pycache__/" "__init__.py" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masterentry/" (22291 27982 0 0) "views.py" "urls.py~" "urls.py" "tests.py" "templates/" "static/" "models.py" "migrations/" "forms.py~" "forms.py" "apps.py" "admin.py" "__pycache__/" "__init__.py" "#forms.py#" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masterentry/static/" (22290 33744 0 0) "css/" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/home/templates/" (22290 33502 0 0) "home/" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masterentry/templates/" (22287 32305 0 0) "masterentry/" "masterentries.html~" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/groupassignment/" (22286 1016 0 0) "our-awesome-website/" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/" (22278 22321 0 0) "groupassignment/" "girlstut/" "../" "./")
+
+ ("/Users/Amelie/.ipython/" (22182 17761 0 0) "profile_default/" "nbextensions/" "extensions/" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/elpa/git-commit-20160406.905/" (22279 29604 0 0) "git-commit.elc" "git-commit.el" "git-commit-pkg.elc" "git-commit-pkg.el" "git-commit-autoloads.el~" "git-commit-autoloads.el" "../" "./")
+
+ ("/Users/Amelie/Projects/python/django/girlstut/myblog/" (22255 48611 0 0) "wsgi.py" "urls.py" "settings.py" "__init__.py" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem5/AdResearchWr/" (22238 64149 0 0) "~$ARW-presentation.pptx" "peerreview.docx" "draft.tex" "draft.bib" "ARW-presentation.pptx" "ARW-presentation [Autosaved].pptx" "Amelie Schmidt.docx" "../" "./")
+
+ ("/Users/Amelie/Documents/Capstone/Code/" (22238 33318 0 0) "tnesorDNN.py" "Stimuli.mat" "Mycodingpieces/" "MNIST_data/" "minstut.py~" "minstut.py" "input_data.pyc" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/maxg/python-style/" (22253 24465 0 0) "style-checker.rkt" "style-checker.py" "README.md" "foobar.py" ".git/" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/elise/parse-arithmetic/" (22253 24464 0 0) "parse_arith.py" ".git/" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/elise/" (22249 39888 0 0) "parse-arithmetic/" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/" (22249 39883 0 0) "teun/" "maxg/" "elise/" "caroline/" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/maxg/" (22249 39018 0 0) "python-style/" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem6/" (22238 64999 0 0) "otherfile.txt" "Linguistics/" "GamesLearning/" "file1.txt" "file0.txt" "assignment3/" "advprog/" ".DS_Store" ".#assignment1.py" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/" (22238 64696 0 0) "Sem6/" "Sem5/" "ref.bib" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sen6/otp2/" (22224 54771 0 0) "you.txt" "would.txt" "with.txt" "will.txt" "which.txt" "when.txt" "updated_FINAL_file" "update_find_words" "translate.pyc" "translate.py" "time.txt" "this.txt" "they.txt" "there.txt" "their.txt" "the.txt" "that.txt" "team2-enc2.txt" "team2-enc1.txt" "such.txt" "stringtonumber" "said.txt" "README.md" "peope.txt" "p1numbers.py" "p1find.pyc" "p1find.py" "not.txt" "newtranslate.py~" "newtranslate.py" "modularsubtraction.pyc" "modularsubtraction.py" "make.txt" "like.txt" "have.txt" "from.txt" "for.txt" "find_words3.py~" "find_words3.pyc" "find_words3.py" "find_words2.py~" "find_words2.pyc" "find_words2.py" "find_words.pyc" "find_words.py" "find_differences.py" "filter_vowels.py~" "filter_vowels.py" "doing.txt" "cuttostrings.py" "crackthecode.py~" "crackthecode.py" "could.txt" "convertplaintext.pyc" "convertplaintext.py" "but.txt" "and.txt" "analysetexts.py" "about.txt" ".gitignore" ".git/" ".#translate.py" ".#modularsubtraction.py" ".#find_words2.py" "#translate.py#" "#modularsubtraction.py#" "#find_words2.py#" "#deciphering_guide.txt#" "#crackercode.py#~" "#crackercode.py#" "../" "./")
+
+ ("/Users/Amelie/Documents/otp2/" (22218 46737 0 0) "your.txt" "you.txt" "years.txt" "year.txt" "x.txt" "would.txt" "world.txt" "work.txt" "with.txt" "will.txt" "who.txt" "which.txt" "where.txt" "when.txt" "what.txt" "were.txt" "well.txt" "web.txt" "we.txt" "way.txt" "was.txt" "view.txt" "video.txt" "very.txt" "using.txt" "user.txt" "used.txt" "use.txt" "us.txt" "up.txt" "university.txt" "united.txt" "under.txt" "type.txt" "two.txt" "travel.txt" "translate.pyc" "translate.py" "top.txt" "to.txt" "time.txt" "through.txt" "those.txt" "this.txt" "they.txt" "these.txt" "there.txt" "then.txt" "them.txt" "their.txt" "the.txt" "that.txt" "than.txt" "terms.txt" "team2-enc2.txt" "team2-enc1.txt" "t.txt" "system.txt" "support.txt" "such.txt" "submod.pyc" "submod.py" "store.txt" "state.txt" "some.txt" "software.txt" "so.txt" "site.txt" "should.txt" "she.txt" "sex.txt" "set.txt" "services.txt" "service.txt" "send.txt" "see.txt" "search.txt" "school.txt" "said.txt" "s.txt" "rights.txt" "right.txt" "reviews.txt" "review.txt" "results.txt" "research.txt" "report.txt" "real.txt" "read.txt" "re.txt" "r.txt" "public.txt" "program.txt" "products.txt" "product.txt" "privacy.txt" "price.txt" "post.txt" "policy.txt" "pm.txt" "please.txt" "people.txt" "part.txt" "page.txt" "p1numbers.py" "p1find.pyc" "p1find.py" "p.txt" "over.txt" "out.txt" "our.txt" "other.txt" "order.txt" "or.txt" "only.txt" "online.txt" "one.txt" "on.txt" "office.txt" "off.txt" "of.txt" "number.txt" "now.txt" "not.txt" "no.txt" "next.txt" "news.txt" "new.txt" "neededPlaintextOutput.pyc" "neededPlaintextOutput.py" "need.txt" "name.txt" "n.txt" "my.txt" "must.txt" "music.txt" "most.txt" "more.txt" "message.txt" "member.txt" "me.txt" "may.txt" "map.txt" "many.txt" "management.txt" "make.txt" "mail.txt" "made.txt" "m.txt" "local.txt" "list.txt" "links.txt" "line.txt" "like.txt" "life.txt" "last.txt" "know.txt" "just.txt" "january.txt" "jan.txt" "its.txt" "items.txt" "item.txt" "it.txt" "is.txt" "into.txt" "international.txt" "information.txt" "info.txt" "in.txt" "if.txt" "i.txt" "how.txt" "hotels.txt" "hotel.txt" "home.txt" "his.txt" "high.txt" "here.txt" "her.txt" "help.txt" "health.txt" "he.txt" "have.txt" "has.txt" "had.txt" "group.txt" "great.txt" "good.txt" "go.txt" "get.txt" "general.txt" "games.txt" "full.txt" "from.txt" "free.txt" "for.txt" "first.txt" "findfuctions.pyc" "find_words.py~" "find_words.pyc" "find_words.py" "find_differences.py" "find.txt" "filter_vowels.py" "f.txt" "email.txt" "education.txt" "ebay.txt" "each.txt" "e.txt" "does.txt" "do.txt" "did.txt" "development.txt" "details.txt" "de.txt" "days.txt" "day.txt" "date.txt" "data.txt" "d.txt" "crackthecode.py~" "crackthecode.py" "could.txt" "copyright.txt" "convPlaintext.pyc" "convPlaintext.py" "contact.txt" "company.txt" "comments.txt" "click.txt" "city.txt" "center.txt" "can.txt" "c.txt" "by.txt" "buy.txt" "but.txt" "business.txt" "books.txt" "book.txt" "best.txt" "before.txt" "been.txt" "because.txt" "be.txt" "back.txt" "b.txt" "available.txt" "at.txt" "as.txt" "are.txt" "any.txt" "and.txt" "analysetexts.py~" "analysetexts.py" "an.txt" "am.txt" "also.txt" "all.txt" "after.txt" "add.txt" "about.txt" "a.txt" "20k.txt" ".DS_Store" "#crackercode.py#" "../" "./")
+
+ ("/Users/Amelie/Downloads/examplethesis/" (21502 64218 0 0) "temporary.jpg" "temporary.eps" "pricesnext.tex" "pricesfirst.tex" "prices1.tex" "prices.tex" "msuthesis.cls" "msucs.bst" "lion.jpg" "lion.eps" "ieeecsexamples.bib" "exlos.tex" "exfaq.tex" "exchapstart.tex" "exchaprefs.tex" "exchapmath.tex" "exchapintroduction.tex" "exchapfigsandtabs.tex" "exchapconclusions.tex" "exchapbody.tex" "exappendix.tex" "examplethesis.toc" "examplethesis.tex" "examplethesis.pdf" "examplethesis.lot" "examplethesis.log" "examplethesis.lof" "examplethesis.blg" "examplethesis.bbl" "examplethesis.aux" "exack.tex" "exabstract.tex" "empty.bib" "compile_pdf.bat!" "compile_eps.bat!" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sen6/assignment3/otp/" (22215 23322 0 0) "pushcyphers.sh" "otp.py" "generate.py" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sen6/assignment3/otp2/" (22215 15991 0 0) "translate.py~" "translate.py" "team2-enc2.txt" "team2-enc1.txt" "README.md" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sen6/assignment3/" (22215 13413 0 0) "otp2/" "otp/" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sen6/" (22215 12665 0 0) "text2.txt" "text.py~" "text.py" "submission-2016.02.16-07.46.py" "submission-2016.02.16-07.43.py" "submission-2016.02.16-07.32.py" "stdio.py~" "stdio.pyc" "stdio.py" "someotherfile.txt" "somefile.txt" "pwd" "otp2/" "otherfile.txt" "Linguistics/" "GamesLearning/" "file1.txt" "file0.txt" "assignment3/" "assignment2.py~" "assignment2.py" "assignment1.py~" "assignment1.py" ".DS_Store" ".#assignment1.py" "#assignment1.py#" "../" "./")
+
+ ("/Users/Amelie/Documents/tensorflowtut/" (22210 60941 0 0) "#minst.py#~~" "#minst.py#~" "#minst.py#" "../" "./")
+
+ ("/Users/Amelie/Documents/Capstone/ccnlab_code/" (22183 24185 0 0) "neural-coding-old2/" "neural-coding-old/" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Documents/theanotut/" (22194 10667 0 0) "mnist.pkl" "ex2.py" "ex1.py~" "ex1.py" "../" "./")
+
+ ("/Users/Amelie/Downloads/" (22195 9250 0 0) "★Admission guide for International student_Graduate, Spring 2016.pdf" "★2016 Spring New International Student Reference Guide - Graduate (final).pdf" "~$uroscience5e Ch12 Review Questions.doc" "~$ndbook-Sylvius-2015-pdf (1).pdf" "~$6126-ch2b.ppt" "Work.png" "VPGallant.pdf" "VirtualBox-5.0.14-105127-OSX.dmg" "Utorrent.dmg" "Utorrent (1).dmg" "Untitled 5.rtf" "Transmission-2-84.dmg" "transit-delivery-times_tcm19-22834.pdf" "transit-delivery-times_tcm19-22834 (2).pdf" "transit-delivery-times_tcm19-22834 (1).pdf" "transfer-of-credit-form-updated-12-november-2013.docx" "test.m" "template_cv.tex" "table of contents.docx" "stump.tex" "StudentQuestionnaire2015-2016.docx" "sprachkurse.zip" "sprachkurse/" "SpotifyInstaller.zip" "siam_sjmael20_303.bib" "short-title-sample.pdf" "short-title-sample (3).pdf" "short-title-sample (2).pdf" "short-title-sample (1).pdf" "servicelevels-holidays-2015_tcm19-23188.pdf" "SecureW2.mobileconfig" "science.bib" "science (2).bib" "science (1).bib" "resume-schmidt.pdf" "respondent.pdf" "Research Summer Analyst.pdf" "Research Summer Analyst (4).pdf" "Research Summer Analyst (3).pdf" "Research Summer Analyst (2).pdf" "Research Summer Analyst (1).pdf" "res9a.tex" "Report.docx" "project.pdf" "Primo_RIS_Export.ris" "PracticalSolutions.tar.bz2" "pplane.jar" "pplane.ini" "PougetBeckMaLatham_NNreview_2013_probBrain.pdf" "PougetBeckMaLatham_NNreview_2013_probBrain (1).pdf" "Postal-Rates-january-2015-PostNL_tcm10-19391.pdf" "Postal-Rates-january-2015-PostNL_tcm10-19391 (2).pdf" "Postal-Rates-january-2015-PostNL_tcm10-19391 (1).pdf" "pmcid-PMC4234525.ris" "pmcid-PMC4125038.ris" "pmcid-PMC3900517.ris" "pmcid-PMC3556484.ris" "pmcid-PMC3037423.ris" "pca_exercise.zip" "pca_exercise/" "PART1.csv" "P&G%281%29.pdf" "Overkomstduur_tcm10-22041.pdf" "Neuroscience5e Ch12 Review Questions.doc" "neural-coding-old-83644ebde5c356452403cd27fb61261c586d240b.zip" "neural-coding-old-83644ebde5c356452403cd27fb61261c586d240b 3/" "neural-coding-old-83644ebde5c356452403cd27fb61261c586d240b 2/" "neural-coding-old-83644ebde5c356452403cd27fb61261c586d240b/" "neighbourND.zip" "nature06713.ris" "nature06713 (3).ris" "nature06713 (2).ris" "nature06713 (1).ris" "myelpa-2.0.zip" "myelpa-2.0/" "Mortdecai (2015) [1080p].torrent" "Mortdecai (2015) [1080p]/" "mnist.pkl.gz" "mmc1.pdf" "Midterm exam Linguistics.docx" "matlab_R2015b_maci64.zip" "matlab_R2015b_maci64/" "matlab-quick-start.pdf" "MathWorks/" "Maths.zip" "Maths/" "Master's Sun (2013) (K-drama) Complete Torrent.torrent" "mactex-20150613.pkg" "mac-data-recovery_full737.dmg" "mac-data-recovery_full1463.dmg" "lecture2.ps" "lecture2 (1).ps" "kuu8tr-aac.m4a" "Korean Made Simple (PDF).pdf" "Korean Made Simple (PDF) (1).pdf" "Konto_17140434-Auszug_2015_012.PDF" "Konto_17140434-Auszug_2015_011.PDF" "Konto_17140434-Auszug_2015_011 (1).PDF" "Konto_17140434-Auszug_2015_010.PDF" "kdisk_setup_manual_chrome.exe" "KakaoTalk_Photo_2016-01-14-11-13-07_54.jpeg" "KakaoTalk_Photo_2016-01-14-11-13-06_55.jpeg" "KakaoTalk_Photo_2016-01-14-11-13-00_59.jpeg" "KakaoTalk_Photo_2016-01-14-11-12-58_44.jpeg" "KakaoTalk_Photo_2016-01-14-11-12-56_41.jpeg" "KakaoTalk_Chat_동균_2015-12-07-09-59-33.csv" "Journal of Energy Climate and Sustainability.docx" "Journal of Computer Science.docx" "Journal -  Ethics, International Relationships and Human Rights.docx" "JobXchange_companies_01.doc" "jdk-8u65-macosx-x64.dmg" "irrationalman2015brripxvidac3-evo-english-75094.zip" "Irrational.Man.2015.BRRip.XviD.AC3-EVO.srt" "iPadian.air" "IOPEXPORT_BIB.bib" "intro.zip" "intro/" "Instructions 18 November Practical Neuroanatomy.doc" "Instructions 18 November Practical Neuroanatomy (1).doc" "installgoogledrive.dmg" "Install Spotify.app/" "info%3Adoi%2F10.1371%2Fjournal.pcbi.1003724.bib" "IMAGES (1).mat" "hw7.tex" "HW6.tex" "hult-prize-application.docx" "Hidde Boonstra Final kopie.docx" "Handbook-Sylvius-2015-pdf.pdf" "Handbook-Sylvius-2015-pdf-Autosaved.docx" "Handbook-Sylvius-2015-pdf-Autosaved (1).docx" "Handbook-Sylvius-2015-pdf (1).pdf" "Guidelines & info Round table discussions FALL 2015.doc" "Guidelines & info Round table discussions FALL 2015 (1).doc" "Groups.xlsx" "gpautobackup_setup.dmg" "googlechrome.dmg" "Going-Ice-Fishing-reviewed.docx" "GitHub Desktop 216.zip" "freelancer-desktop-app_osx-x86_64.pkg" "freelancer-desktop-app_osx-x86_64 (1).pkg" "Fly-Fishing-Gear-reviewed.docx" "Finding Neverland-The Park On Piano-SheetMusicDownload.pdf" "Final-Paper_Tanushree.docx" "Feminist-Meeting-Minutes_Nov-24.docx" "fast_sc.tgz" "fa5c7059de1f87d76ce30812643fe9a9.log" "explore_kamitani_tong_pattern_based_fMRI.m" "Environment-2-2.docx" "Envir. Roel .docx" "Envir. Roel  (1).docx" "Envir. Maarten.docx" "Envir. Kelly.docx" "Envir. Kelly, Roel, Maarten.docx" "Envir. Joris.docx" "emacs.d-2.0.zip" "emacs.d-2.0 (1).zip" "emacs.d/" "eccv10_tutorial_part2.ppt" "eccv10_tutorial_part2 (1).ppt" "dynsys.pdf" "dynsys (1).pdf" "draft.zip" "draft.pdf" "draft (2).pdf" "draft (1).pdf" "Data_Rescue_4.2.1.dmg" "Data_Rescue_4.2.1 (1).dmg" "cvfile_0023928.pdf" "customs-form-cn22-postnl_tcm19-23092.pdf" "credit-and-grading-guidelines.pdf" "crcns-vim-1-readme.pdf" "cover.docx" "Course Manual Neurosciences 2015 Nov 6.docx" "Course Manual Neurosciences 2015 Nov 6 (2).docx" "Course Manual Neurosciences 2015 Nov 6 (1).docx" "Course manual Linguistics Spring 2016_SPA(1).docx" "ContestAppletProd.jnlp" "Connectify2016Installer_ir156932_.exe" "classification_plane_tutorial.m" "checksums.md5" "Chaotic_Map_Cryptography_and_Security.pdf" "Chaos and Cryptography.pdf" "Ch10 Review Questions.doc" "Ch09 Review Questions.doc" "CapstoneGuidelines2015-2016.docx" "CapstoneGuidelines2015-2016 (1).docx" "BlueStacks-Installer.dmg" "Best Fishing Times.docx" "Best Fishing Times (1).sb-e9ef0506-lJTaVd" "Best Fishing Times (1) copy.docx" "Best Fishing Times" "AUCompliments_EDIT.docx" "AUCompliments_EDIT (1).docx" "AUCompliments.rtf" "Assignment7.pdf" "Assignment7 (1).pdf" "Assignment1.py" "assignment1 (1).py" "ARW-peer-review-report.docx" "ARW-Article.docx" "ar_neuro26_381.bib" "application.xls" "apa-good.bst.zip" "apa-good.bst" "Amelie-Schmidt.docx" "Amelie-Schmidt-1.docx" "Airfoil.zip" "Airfoil/" "academic-calendar-2015-2016-update-2-9.pdf" "academic-calendar-2015-2016-update-2-9 (1).pdf" "Abrechnung_5490________7646_20160105.PDF" "Abrechnung_5490________7646_20150902.PDF" "7.rar" "6126-ch2b.ppt" "269-28_men_tshirt_white.jpg" "2016 CAU Korean Language Program Brochure.pdf" "2015_Hanshin_KLI_Admission_Guide_Eng.pdf" "2015 Implementation Plan for Basic Research Programsv1.1.pdf" "2011 KGKS Graduate Program Guideline.doc" "160121_Timetable_2015-16_S2_students.xls" "12546254_1680649635510163_744735921_o.jpg" "10.1007%2F3-540-46416-6_49.bib" "10.1007%2F3-540-46416-6_11.txt" "10.1007%2F3-540-46416-6_11.bib" "10.1007%2F3-540-46416-6_11 (1).txt" "1-s2.0-S0896627309006850-main.pdf" "05.2015 GKS Graduate courses FAQ (ENGLISH-KOREAN).rtf" "01.2015 GKS Graduate Program Guidelines(English-Korean).doc" ".localized" ".DS_Store" "(685816566) Amelie Schmidt-resume.docx" "#pmcid-PMC4234525.ris#" "#pmcid-PMC4125038.ris#" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/elpa/" (22193 58557 0 0) "yasnippet-20160104.129/" "seq-readme.txt" "seoul256-theme-20150714.1535/" "python-mode-readme.txt" "python-mode-20160131.1207/" "python-mode-20160114.2307/" "pyflakes-1.0/" "popup-20151222.1339/" "pep8-1.2/" "peek-mode-readme.txt" "peacock-theme-20141115.2302/" "math-symbol-lists-20151215.1043/" "leuven-theme-20160115.742/" "fill-column-indicator-20151030.1233/" "exec-path-from-shell-20160112.2246/" "auto-complete-c-headers-readme.txt" "auto-complete-auctex-20140223.958/" "auto-complete-20160107.8/" "auctex-11.89/" "archives/" "ace-flyspell-readme.txt" "ac-math-20141116.1327/" "ac-ispell-readme.txt" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/elpa/yasnippet-20160104.129/" (22172 50603 0 0) "yasnippet.elc" "yasnippet.el" "yasnippet-pkg.el" "yasnippet-autoloads.el~" "yasnippet-autoloads.el" "snippets/" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/elpa/yasnippet-20160104.129/snippets/" (22172 50602 0 0) "yaml-mode/" "udev-mode/" "typerex-mode" "tuareg-mode/" "text-mode/" "sql-mode/" "snippets/" "snippet-mode/" "sh-mode/" "scala-mode/" "ruby-mode/" "rst-mode/" "rename_add_contr.py" "README.md" "python-mode/" "prog-mode/" "perl-mode/" "org-mode/" "octave-mode/" "nxml-mode/" "nsis-mode/" "nesc-mode/" "ned-mode/" "markdown-mode/" "malabar-mode/" "makefile-mode/" "makefile-gmake-mode/" "makefile-bsdmake-mode/" "makefile-automake-mode/" "m4-mode/" "lua-mode/" "lisp-mode/" "lisp-interaction-mode/" "LICENSE" "latex-mode/" "js2-mode" "js-mode/" "java-mode/" "html-mode/" "haskell-mode/" "groovy-mode/" "go-mode/" "git-commit-mode/" "fundamental-mode/" "f90-mode/" "erlang-mode/" "erc-mode/" "ensime-mode" "enh-ruby-mode" "emacs-lisp-mode/" "elixir-mode/" "css-mode/" "csharp-mode/" "cpp-omnet-mode/" "cperl-mode/" "CONTRIBUTORS.txt" "conf-unix-mode/" "cmake-mode/" "clojure-mode/" "cider-repl-mode" "chef-mode/" "cc-mode/" "c-mode/" "c++-mode/" "applescript-mode/" "antlr-mode/" ".nosearch" ".gitignore" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/elpa/yasnippet-20160104.129/snippets/emacs-lisp-mode/" (22172 50601 0 0) "yes-or-no-p" "y-or-n-p" "x-word-or-region" "x-traverse_dir" "x-grabthing" "x-grabstring" "x-find-replace" "x-file.read-lines" "x-file.process" "x-dired.process_marked" "word_regexp" "word-or-region" "with-current-buffer" "widget-get" "while" "when" "vector" "unless" "traverse_dir" "thing-at-point" "substring" "stringp" "string=" "string-to-number" "string-match" "string" "split-string" "skip-chars-forward" "skip-chars-backward" "should" "setq" "set-mark" "set-file-modes" "set-buffer" "set" "search-forward-regexp" "search-forward" "search-backward-regexp" "search-backward" "save-excursion" "save-buffer" "require" "replace-regexp-in-string" "replace-regexp" "repeat" "rename-file" "region-end" "region-beginning" "region-active-p" "re-search-forward" "re-search-backward" "put" "push" "progn" "print" "princ" "point-min" "point-max" "point" "or" "number-to-string" "null" "nth" "not" "minor_mode" "message" "memq" "match-string" "match-end" "match-beginning" "mapcar" "mapc" "make-local-variable" "make-directory" "looking-at" "list" "line-end-position" "line-beginning-position" "let" "length" "lambda" "kill-buffer" "kbd" "interactive" "insert-file-contents" "insert" "if" "hash" "grabthing" "grabstring" "goto-char" "global-set-key" "get" "function" "funcall" "forward-line" "forward-char" "format" "find-replace" "find-file" "file.read-lines" "file.process" "file-relative-name" "file-name-sans-extension" "file-name-nondirectory" "file-name-extension" "file-name-directory" "fboundp" "f" "expand-file-name" "ert-deftest" "error" "equal" "eq" "end-of-line" "dolist" "dired.process_marked" "directory-files" "delete-region" "delete-file" "delete-directory" "delete-char" "defvar" "defun" "defsubst" "define-key" "defcustom" "defalias" "custom-autoload" "current-buffer" "copy-file" "copy-directory" "consp" "cons" "condition-case" "cond" "concat" "cdr" "car" "buffer-substring-no-properties" "buffer-substring" "buffer-modified-p" "buffer-file-name" "bounds-of-thing-at-point" "beginning-of-line" "backward-char" "autoload" "assq" "aset" "aref" "apply" "append" "and" "add-hook" ".read_me" "../" "./")
+
+ ("/Users/Amelie/exercism/cpp/bob/" (22090 12236 0 0) "README.md" "CMakeLists.txt" "build/" "bob_test.cpp" "bob.h" "bob.cpp" "../" "./")
+
+ ("/Users/Amelie/exercism/cpp/" (22083 47927 0 0) "bob/" "../" "./")
+
+ ("/Users/Amelie/exercism/" (22083 47927 0 0) "cpp/" "../" "./")
+
+ ("/Users/Amelie/Documents/CambridgeInternship/Lab 6/" (22084 46223 0 0) "myProg" "MyFunc.H" "MyFunc.C" "Main.o" "Euler6_2.C" "Euler.o" "Euler.H" "Euler" "6_1_1.C" "611" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/lisp/" (22086 21600 0 0) "init-zencoding-mode.el" "init-yasnippet.el" "init-xterm.el" "init-writting.el" "init-workgroups2.el" "init-windows.el" "init-which-func.el" "init-web-mode.el" "init-utils.el" "init-uniquify.el" "init-textile.el" "init-term-mode.el" "init-stripe-buffer.el" "init-spelling.el" "init-smex.el" "init-slime.el" "init-site-lisp.el" "init-sh.el" "init-sessions.el" "init-semantic.el" "init-ruby-mode.el" "init-python-mode.el" "init-pomodoro.el" "init-org.el" "init-org-mime.el" "init-moz.el" "init-modeline.el" "init-misc.el" "init-misc-lazy.el" "init-markdown.el" "init-lua-mode.el" "init-locales.el" "init-lisp.el" "init-linum-mode.el" "init-latex.el" "init-keyfreq.el" "init-javascript.el" "init-ido.el" "init-ibuffer.el" "init-httpd.el" "init-hs-minor-mode.el" "init-hippie-expand.el" "init-helm.el" "init-haskell.el" "init-gui-frames.el" "init-gud.el" "init-gtags.el" "init-gnus.el" "init-git.el" "init-frame-hooks.el" "init-fonts.el" "init-flymake.el" "init-exec-path.el" "init-evil.el" "init-erlang.el" "init-emacspeak.el" "init-emacs-w3m.el" "init-elpa.el~" "init-elpa.el" "init-elisp.el" "init-eim.el" "init-doxygen.el" "init-dired.el" "init-ctags.el" "init-csv.el" "init-css.el" "init-crontab.el" "init-cperl-mode.el" "init-compat.el" "init-company.el" "init-color-theme.el" "init-clipboard.el" "init-chinese-pyim.el" "init-cc-mode.el" "init-bbdb.el" "init-artbollocks-mode.el" "../" "./")
+
+ ("/Users/Amelie/Desktop/" (22083 10036 0 0) ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/GitHub/CppPracticeCode/" (22083 47312 0 0) "heapallocation.C" ".git/" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/misc/" (22084 22004 0 0) "english-words.txt" "../" "./")
+
+ ("/Users/Amelie/Documents/AUC/Sem5/" (22084 22308 0 0) "Neuroscience/" "DynamicalSys/" "AdResearchWr/" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/emacs2.d/" (22084 21466 0 0) "init.el~" "init.el" "auto-save-list/" "../" "./")
+
+ ("/Users/Amelie/GitHub/C++-Code/" (22084 20338 0 0) "5_2.C" "5.2" "5.1" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/GitHub/" (22083 47320 0 0) "emacs.d/" "CppPracticeCode/" "C++-Code/" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Documents/CambridgeInternship/C++-Code/" (22083 39071 0 0) "heapallocation.C" "5_2.C" "5.1" "../" "./")
+
+ ("/System/" (22056 4246 0 0) "Library/" ".localized" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

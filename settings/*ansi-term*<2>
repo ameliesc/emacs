@@ -1,0 +1,554 @@
+Thu Jul 20 ~ 
+>>> python -i
+Python 2.7.12 (default, Dec  4 2016, 18:13:09) 
+[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> list(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not iterable
+>>> a = [ 1,2,3]
+>>> enumerate(a)
+<enumerate object at 0x10fc75870>
+>>> a,b = enumerate(a)                                                                                                                                                           
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: too many values to unpack
+>>> b = enumerate(a)                                                                                                                                                             
+>>> b
+<enumerate object at 0x10fc75910>
+>>> type(b)
+<type 'enumerate'>
+>>> type(b[1])                                                                                                                                                                   
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'enumerate' object has no attribute '__getitem__'
+>>> a.next                                                                                                                                                                       
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'next'
+>>> b = enumerate(a)
+>>> b.next
+<method-wrapper 'next' of enumerate object at 0x10fc75960>
+>>> b.next()
+(0, 1)
+>>> b.next()
+(1, 2)
+>>> b.next()
+(2, 3)
+>>> type(a)
+<type 'list'>
+>>> a.next()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'next'
+>>> seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+>>> for i, seasons in (enumerate(seasons)):
+...     print seasons
+... 
+Spring
+Summer
+Fall
+Winter
+>>> hash(seasons)
+1194522647329886213
+>>> h = hash(seasons)                                                                 
+>>> h[1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object has no attribute '__getitem__'
+>>> 
+Thu Jul 20 ~ 
+>>> ls
+*message*-20170606-155615                                                            P
+rojects                                                                              
+*message*-20170606-155615~                                                           P
+ublic                                                                                
+*message*-20170606-184833                                                            S
+CHMIDT COLBERG_AMELIE 22FEB2015 FRA ICN.rtf                                          
+*scratch*                                                                            S
+ites                                                                                 
+*scratch*~                                                                           V
+irtualBox VMs                                                                        
+Answer to your request_ Request Off-campus course (reference number AC1510 5020).rtf b
+in                                                                                   
+Applications                                                                         e
+xercism                                                                              
+Desktop                                                                              j
+ava.log.12681                                                                        
+Documents                                                                            n
+ltk_data                                                                             
+Downloads                                                                            p
+rojs                                                                                 
+GitHub                                                                               r
+ecommendation                                                                        
+Google Drive                                                                         t
+ensorflow                                                                            
+Library                                                                              t
+ensorflow3                                                                           
+Movies                                                                               t
+est.py                                                                               
+Music                                                                                t
+est.sh                                                                               
+News                                                                                 t
+est.sh~                                                                              
+Notes                                                                                t
+est.tex                                                                              
+Pictures
+Thu Jul 20 ~ 
+>>> cd ~/.emacs.d/
+Thu Jul 20 ~/.emacs.d a() 
+>>> ls
+%backup%~                       company-statistics-cache.el     ido.last             o
+rg-mode.el                      url                                                  
+abbrev_defs                     elpa                            ido.last~            r
+ecentf                                                                               
+ac-comphist.dat                 emacs-for-python                init.el              r
+equest                                                                               
+auto-save-list                  eproject.lst                    init.el~             t
+ramp                                                                                 
+Thu Jul 20 ~/.emacs.d a() 
+>>> ls
+%backup%~                       company-statistics-cache.el     ido.last             o
+rg-mode.el                      url                                                  
+abbrev_defs                     elpa                            ido.last~            r
+ecentf                                                                               
+ac-comphist.dat                 emacs-for-python                init.el              r
+equest                                                                               
+auto-save-list                  eproject.lst                    init.el~             t
+ramp                                                                                 
+Thu Jul 20 ~/.emacs.d a() 
+>>> mkdir settings 
+Thu Jul 20 ~/.emacs.d a() 
+>>> mv org-mode.el settings/
+Thu Jul 20 ~/.emacs.d a() 
+>>> cd settings/
+Thu Jul 20 ~/.emacs.d/settings a() 
+>>> ls
+org-mode.el
+Thu Jul 20 ~/.emacs.d/settings a() 
+>>> ls
+#custom-functions.el#   custom-functions.el     org-mode.el~            python-setting
+s.el~                                                                                
+#el-get-settings.el#    org-mode.el             python-settings.el      yassnippet-set
+ting.el                                                                              
+Thu Jul 20 ~/.emacs.d/settings a() 
+>>> cd ~/
+Mon Jul 24 ~ 
+>>> mkdir orgfiles
+Mon Jul 24 ~ 
+>>> touch .notes
+Mon Jul 24 ~ 
+>>> cd orgfiles/
+Mon Jul 24 ~/orgfiles 
+>>> cd ~/Projects/python/tfpractice/
+Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> sourve myvenv/bin/activate
+bash: sourve: command not found
+Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> source myvenv/bin/activate                                                        
+a[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> cd ~/
+a[myvenv] Mon Jul 24 ~ 
+>>> source ~/.bashrc
+a[myvenv] Mon Jul 24 ~ 
+>>> source ~/.bashrc
+[myvenv] Mon Jul 24 ~ 
+>>> cd ~/Projects/python/tfpractice/
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> ls
+#bigdatauninotes.org#   README.md               hello_worldtf.py        requirements.txt        tensorflow              udacity_google
+#hello_worldtf.py#~     bigdatauninotes.org     myvenv                  setup.sh                test.sh
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./hello_worldtf.py 
+  File "./hello_worldtf.py", line 2
+    from __future__ import print_function
+SyntaxError: from __future__ imports must occur at the beginning of the file
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./hello_worldtf.py 
+Traceback (most recent call last):
+  File "./hello_worldtf.py", line 2, in <module>
+    import tensorflow as tf
+ImportError: No module named tensorflow
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> pip freeze
+appdirs==1.4.3
+numpy==1.12.1
+packaging==16.8
+pandas==0.20.0
+pyparsing==2.2.0
+python-dateutil==2.6.0
+pytz==2017.2
+six==1.10.0
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> pip install --upgrade tensorflow 
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> pip freeze
+appdirs==1.4.3
+numpy==1.12.1
+packaging==16.8
+pandas==0.20.0
+pyparsing==2.2.0
+python-dateutil==2.6.0
+pytz==2017.2
+six==1.10.0
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> pip install tensorflow
+Collecting tensorflow
+  Downloading tensorflow-1.2.1-cp27-cp27m-macosx_10_11_x86_64.whl (33.6MB)
+    100% |################################| 33.6MB 32kB/s 
+Collecting html5lib==0.9999999 (from tensorflow)
+  Downloading html5lib-0.9999999.tar.gz (889kB)
+    100% |################################| 890kB 694kB/s 
+Collecting markdown>=2.6.8 (from tensorflow)
+  Downloading Markdown-2.6.8.tar.gz (307kB)
+    100% |################################| 317kB 1.0MB/s 
+Collecting werkzeug>=0.11.10 (from tensorflow)
+  Downloading Werkzeug-0.12.2-py2.py3-none-any.whl (312kB)
+    100% |################################| 317kB 1.1MB/s 
+Requirement already satisfied: six>=1.10.0 in ./myvenv/lib/python2.7/site-packages (from tensorflow)
+Collecting bleach==1.5.0 (from tensorflow)
+  Downloading bleach-1.5.0-py2.py3-none-any.whl
+Requirement already satisfied: wheel in ./myvenv/lib/python2.7/site-packages (from tensorflow)
+Collecting backports.weakref==1.0rc1 (from tensorflow)
+  Downloading backports.weakref-1.0rc1-py2-none-any.whl
+Collecting protobuf>=3.2.0 (from tensorflow)
+  Downloading protobuf-3.3.0.tar.gz (271kB)
+    100% |################################| 276kB 4.0MB/s 
+Collecting mock>=2.0.0 (from tensorflow)
+  Using cached mock-2.0.0-py2.py3-none-any.whl
+Requirement already satisfied: numpy>=1.11.0 in ./myvenv/lib/python2.7/site-packages (from tensorflow)
+Requirement already satisfied: setuptools in ./myvenv/lib/python2.7/site-packages (from protobuf>=3.2.0->tensorflow)
+Collecting funcsigs>=1; python_version < "3.3" (from mock>=2.0.0->tensorflow)
+  Using cached funcsigs-1.0.2-py2.py3-none-any.whl
+Collecting pbr>=0.11 (from mock>=2.0.0->tensorflow)
+  Downloading pbr-3.1.1-py2.py3-none-any.whl (99kB)
+    100% |################################| 102kB 4.5MB/s 
+Requirement already satisfied: appdirs>=1.4.0 in ./myvenv/lib/python2.7/site-packages (from setuptools->protobuf>=3.2.0->tensorflow)
+Requirement already satisfied: packaging>=16.8 in ./myvenv/lib/python2.7/site-packages (from setuptools->protobuf>=3.2.0->tensorflow)
+Requirement already satisfied: pyparsing in ./myvenv/lib/python2.7/site-packages (from packaging>=16.8->setuptools->protobuf>=3.2.0->tensorflow)
+Building wheels for collected packages: html5lib, markdown, protobuf
+  Running setup.py bdist_wheel for html5lib ... done
+  Stored in directory: /Users/Amelie/Library/Caches/pip/wheels/6f/85/6c/56b8e1292c6214c4eb73b9dda50f53e8e977bf65989373c962
+  Running setup.py bdist_wheel for markdown ... done
+  Stored in directory: /Users/Amelie/Library/Caches/pip/wheels/85/a7/08/33ee5cd488d0365d8bed79d1d4e5c28dd3fbfc7f6d0ad4bb09
+  Running setup.py bdist_wheel for protobuf ... done
+  Stored in directory: /Users/Amelie/Library/Caches/pip/wheels/1b/42/a0/4c7343df5b629ec9c75655468dce7652b28026896b0209ba55
+Successfully built html5lib markdown protobuf
+Installing collected packages: html5lib, markdown, werkzeug, bleach, backports.weakref, protobuf, funcsigs, pbr, mock, tensorflow
+Successfully installed backports.weakref-1.0rc1 bleach-1.5.0 funcsigs-1.0.2 html5lib-0.9999999 markdown-2.6.8 mock-2.0.0 pbr-3.1.1 protobuf-3.3.0 tensorflow-1.2.1 werkzeug-0.12.
+2                                                                                                                                                                               
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> pip freeze
+appdirs==1.4.3
+backports.weakref==1.0rc1
+bleach==1.5.0
+funcsigs==1.0.2
+html5lib==0.9999999
+Markdown==2.6.8
+mock==2.0.0
+numpy==1.12.1
+packaging==16.8
+pandas==0.20.0
+pbr==3.1.1
+protobuf==3.3.0
+pyparsing==2.2.0
+python-dateutil==2.6.0
+pytz==2017.2
+six==1.10.0
+tensorflow==1.2.1
+Werkzeug==0.12.2
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> touch requirements.txt 
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> pip freeze >> requirements.txt 
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> cat requirements.txt 
+appdirs==1.4.3
+numpy==1.12.1
+packaging==16.8
+protobuf==3.2.0
+pyparsing==2.2.0
+six==1.10.0
+tensorflow_gpu
+Werkzeug==0.12.1
+pandas
+h5py==2.7.0
+
+docker-machine == 0.12.1
+docker == 17.05.0-ce
+appdirs==1.4.3
+backports.weakref==1.0rc1
+bleach==1.5.0
+funcsigs==1.0.2
+html5lib==0.9999999
+Markdown==2.6.8
+mock==2.0.0
+numpy==1.12.1
+packaging==16.8
+pandas==0.20.0
+pbr==3.1.1
+protobuf==3.3.0
+pyparsing==2.2.0
+python-dateutil==2.6.0
+pytz==2017.2
+six==1.10.0
+tensorflow==1.2.1
+Werkzeug==0.12.2
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> cat requirements.txt 
+appdirs==1.4.3
+numpy==1.12.1
+packaging==16.8
+protobuf==3.2.0
+pyparsing==2.2.0
+six==1.10.0
+tensorflow_gpu
+Werkzeug==0.12.1
+pandas
+h5py==2.7.0
+
+docker-machine == 0.12.1
+docker == 17.05.0-ce
+appdirs==1.4.3
+backports.weakref==1.0rc1
+bleach==1.5.0
+funcsigs==1.0.2
+html5lib==0.9999999
+Markdown==2.6.8
+mock==2.0.0
+numpy==1.12.1
+packaging==16.8
+pandas==0.20.0
+pbr==3.1.1
+protobuf==3.3.0
+pyparsing==2.2.0
+python-dateutil==2.6.0
+pytz==2017.2
+six==1.10.0
+tensorflow==1.2.1
+Werkzeug==0.12.2
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./hello_worldtf.py                                                                                                                   
+Traceback (most recent call last):
+  File "./hello_worldtf.py", line 12, in <module>
+    result = session.run()
+TypeError: unbound method run() must be called with Session instance as first argument (got nothing instead)
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./hello_worldtf.py 
+Traceback (most recent call last):
+  File "./hello_worldtf.py", line 12, in <module>
+    result = session.run(c)
+TypeError: unbound method run() must be called with Session instance as first argument (got Tensor instance instead)
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./hello_worldtf.py 
+Traceback (most recent call last):
+  File "./hello_worldtf.py", line 12, in <module>
+    result = session.run(c)
+TypeError: unbound method run() must be called with Session instance as first argument (got Tensor instance instead)
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./hello_worldtf.py 
+2017-07-24 20:56:40.063254: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on you
+r machine and could speed up CPU computations.                                                                                                                                  
+2017-07-24 20:56:40.063298: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+2017-07-24 20:56:40.063309: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your 
+machine and could speed up CPU computations.                                                                                                                                    
+2017-07-24 20:56:40.063319: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+4
+4
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python -i 
+Python 2.7.12 (default, Dec  4 2016, 18:13:09) 
+[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+tf.>>> tf.device()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: device() takes exactly 1 argument (0 given)
+>>> a = tf.constant(1)
+>>> tf.device(a)
+<contextlib.GeneratorContextManager object at 0x10633b4d0>
+>>> 
+>>> 
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./variablepract.py 
+Traceback (most recent call last):
+  File "./variablepract.py", line 11, in <module>
+    one = tf.constant()
+TypeError: constant() takes at least 1 argument (0 given)
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./variablepract.py 
+WARNING:tensorflow:From /Users/Amelie/Projects/python/tfpractice/myvenv/lib/python2.7/site-packages/tensorflow/python/util/tf_should_use.py:170: initialize_all_variables (from t
+ensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.                                                                                             
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+2017-07-24 21:50:02.640868: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on you
+r machine and could speed up CPU computations.                                                                                                                                  
+2017-07-24 21:50:02.640889: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+2017-07-24 21:50:02.640895: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your 
+machine and could speed up CPU computations.                                                                                                                                    
+2017-07-24 21:50:02.640900: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+0
+Traceback (most recent call last):
+  File "./variablepract.py", line 22, in <module>
+    session.run(update)
+  File "/Users/Amelie/Projects/python/tfpractice/myvenv/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 789, in run
+    run_metadata_ptr)
+  File "/Users/Amelie/Projects/python/tfpractice/myvenv/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 925, in _run
+    raise RuntimeError('Attempted to use a closed Session.')
+RuntimeError: Attempted to use a closed Session.
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./variablepract.py 
+WARNING:tensorflow:From /Users/Amelie/Projects/python/tfpractice/myvenv/lib/python2.7/site-packages/tensorflow/python/util/tf_should_use.py:170: initialize_all_variables (from t
+ensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.                                                                                             
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+2017-07-24 21:50:16.373993: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on you
+r machine and could speed up CPU computations.                                                                                                                                  
+2017-07-24 21:50:16.374008: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+2017-07-24 21:50:16.374013: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your 
+machine and could speed up CPU computations.                                                                                                                                    
+2017-07-24 21:50:16.374017: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+0
+1
+2
+3
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./placeholderprac.py
+Traceback (most recent call last):
+  File "./placeholderprac.py", line 6, in <module>
+    a = tf.placeholde(dtype = tf.float32)
+AttributeError: 'module' object has no attribute 'placeholde'
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./placeholderprac.py
+2017-07-24 21:58:49.664568: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on you
+r machine and could speed up CPU computations.                                                                                                                                  
+2017-07-24 21:58:49.664599: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+2017-07-24 21:58:49.664608: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your 
+machine and could speed up CPU computations.                                                                                                                                    
+2017-07-24 21:58:49.664615: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+7.0
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./variablepract.py
+WARNING:tensorflow:From /Users/Amelie/Projects/python/tfpractice/myvenv/lib/python2.7/site-packages/tensorflow/python/util/tf_should_use.py:170: initialize_all_variables (from t
+ensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.                                                                                             
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+2017-07-24 22:02:32.752555: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on you
+r machine and could speed up CPU computations.                                                                                                                                  
+2017-07-24 22:02:32.752571: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+2017-07-24 22:02:32.752575: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your 
+machine and could speed up CPU computations.                                                                                                                                    
+2017-07-24 22:02:32.752579: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+0
+1
+2
+3
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./placeholderprac.py
+2017-07-24 22:03:11.234664: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on you
+r machine and could speed up CPU computations.                                                                                                                                  
+2017-07-24 22:03:11.234688: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+2017-07-24 22:03:11.234694: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your 
+machine and could speed up CPU computations.                                                                                                                                    
+2017-07-24 22:03:11.234699: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+7.0
+Traceback (most recent call last):
+  File "./placeholderprac.py", line 21, in <module>
+    result = sess.run(b, feed_dict = {a:dictionary}) # when passing data need  to specify what value for variable
+  File "/Users/Amelie/Projects/python/tfpractice/myvenv/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 789, in run
+    run_metadata_ptr)
+  File "/Users/Amelie/Projects/python/tfpractice/myvenv/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 968, in _run
+    np_val = np.asarray(subfeed_val, dtype=subfeed_dtype)
+  File "/Users/Amelie/Projects/python/tfpractice/myvenv/lib/python2.7/site-packages/numpy/core/numeric.py", line 531, in asarray
+    return array(a, dtype, copy=False, order=order)
+TypeError: float() argument must be a string or a number
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./placeholderprac.py
+2017-07-24 22:04:36.715618: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on you
+r machine and could speed up CPU computations.                                                                                                                                  
+2017-07-24 22:04:36.715640: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+2017-07-24 22:04:36.715645: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your 
+machine and could speed up CPU computations.                                                                                                                                    
+2017-07-24 22:04:36.715649: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+7.0
+Traceback (most recent call last):
+  File "./placeholderprac.py", line 21, in <module>
+    result = sess.run(b, feed_dict = {a:dictionary}) # when passing data need  to specify what value for variable
+  File "/Users/Amelie/Projects/python/tfpractice/myvenv/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 789, in run
+    run_metadata_ptr)
+  File "/Users/Amelie/Projects/python/tfpractice/myvenv/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 968, in _run
+    np_val = np.asarray(subfeed_val, dtype=subfeed_dtype)
+  File "/Users/Amelie/Projects/python/tfpractice/myvenv/lib/python2.7/site-packages/numpy/core/numeric.py", line 531, in asarray
+    return array(a, dtype, copy=False, order=order)
+TypeError: float() argument must be a string or a number
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> python ./placeholderprac.py
+2017-07-24 22:04:48.103319: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on you
+r machine and could speed up CPU computations.                                                                                                                                  
+2017-07-24 22:04:48.103343: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+2017-07-24 22:04:48.103351: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your 
+machine and could speed up CPU computations.                                                                                                                                    
+2017-07-24 22:04:48.103357: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your m
+achine and could speed up CPU computations.                                                                                                                                     
+7.0
+[[[  2.   4.   6.]
+  [  8.  10.  12.]
+  [ 14.  16.  18.]]
+
+ [[ 26.  28.  30.]
+  [ 32.  34.  36.]
+  [ 38.  40.  42.]]]
+[myvenv] Mon Jul 24 ~/Projects/python/tfpractice () 
+>>> 
+[myvenv] Tue Jul 25 ~/Projects/python/tfpractice () 
+>>> python -i
+Python 2.7.12 (default, Dec  4 2016, 18:13:09) 
+[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy as np
+>>> np.convolve([1,2,3],[1,2,0.5])
+array([ 1. ,  4. ,  7.5,  7. ,  1.5])
+>>> np.convolve([1,2,3],[1,2,0.5], mode = 'full')
+array([ 1. ,  4. ,  7.5,  7. ,  1.5])
+>>> np.convolve([1,2,3],[1,2,0.5], mode = 'same')                                                                                                                                
+array([ 4. ,  7.5,  7. ])
+>>> np.convolve([1,2,3],[1,2,0.5], mode = 'valid)
+  File "<stdin>", line 1
+    np.convolve([1,2,3],[1,2,0.5], mode = 'valid)
+                                                ^
+SyntaxError: EOL while scanning string literal
+>>> np.convolve([1,2,3],[1,2,0.5], mode = 'valid')
+array([ 7.5])
+>>> np.convolve([1,2,3],[1,2,0.5], mode = 'full')                                                                                                                                
+array([ 1. ,  4. ,  7.5,  7. ,  1.5])
+>>> filter_m = tf.Variable(tf.random_normal([3,3,1,1,]))                                             
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tf' is not defined
+>>> import tensorflow as tf
+>>> filter_m = tf.Variable(tf.random_normal([3,3,1,1,]))
+>>> input_m = tf.Variable(tf.random_normal([1,10,10,1]))
+>>> init_op = tf.initialize_all_variables()
+WARNING:tensorflow:From /Users/Amelie/Projects/python/tfpractice/myvenv/lib/python2.7/site-packages/tensorflow/python/util/tf_should_use.py:170: initialize_all_variables (from t
+ensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.                                                                                             
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+>>> 
+                                                                                          

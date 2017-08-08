@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/Amelie/.emacs.d/" . "emacs-for-python/")
  ("/Users/Amelie/Library/" . "KeyBindings/")
  ("/Users/Amelie/Documents/AUC/Sem6/advprog/buildalisp/" . "src/")
  ("/Users/Amelie/Projects/python/brainreader/brainreader/" . "kernel_ridge/")
@@ -14,7 +15,7 @@
  ("/Users/Amelie/Projects/python/django/groupassignment/" . "our-awesome-website/")
  ("/Users/Amelie/Projects/python/django/" . "groupassignment/")
  ("/Users/Amelie/Projects/python/brainreader/" . "brainreader/")
- ("/Users/Amelie/Projects/python/" . "brainreader/")
+ ("/Users/Amelie/Projects/python/" . "usefulfunctions/")
  ("/Users/Amelie/Projects/" . "python/")
  ("/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/elise/" . "parse-arithmetic/")
  ("/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/maxg/" . "python-style/")
@@ -34,13 +35,16 @@
  ("/Users/Amelie/Documents/AUC/Sem5/" . "AdResearchWr/")
  ("/Users/Amelie/Documents/CambridgeInternship/" . "Lab 6/")
  ("/Users/Amelie/Documents/" . "AUC/")
- ("/Users/Amelie/" . "Documents/")
+ ("/Users/Amelie/" . "Projects/")
  ("/Users/" . "Amelie/")
  ("/" . "Users/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/Amelie/Projects/python/usefulfunctions/"
+ "/Users/Amelie/.emacs.d/"
+ "/"
  "/Users/Amelie/Library/KeyBindings/"
  "/Users/Amelie/Documents/AUC/Sem6/advprog/buildalisp/src/"
  "/Users/Amelie/Documents/AUC/Sem6/advprog/buildalisp/"
@@ -58,7 +62,6 @@
  "/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/home/"
  "/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/masterentry/static/css/"
  "/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/home/templates/home/"
- "/Users/Amelie/.emacs.d/"
  "/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/elise/parse-arithmetic/"
  "/Users/Amelie/Documents/AUC/Sem6/advprog/peer-review/maxg/python-style/"
  "/Users/Amelie/Documents/CambridgeInternship/"
@@ -87,6 +90,9 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "checkinmoves.py"
+ "init.el"
+ ".com.apple.timemachine.donotpresent"
  "DefaultKeyBinding.dict"
  "error_handling.c"
  "parser.c"
@@ -94,20 +100,31 @@
  "userprompt.c"
  "refitmodel.py"
  "online_ridgev2.py"
- "deconvnets.py"
- "convnets.py"
- "zero_layer_deconv.py"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/Amelie/.emacs.d/" (22896 26386 0 0) "tramp" "request/" "recentf" "init.el~" "init.el" "ido.last~" "ido.last" "eproject.lst" "emacs-for-python/" "elpa/" "company-statistics-cache.el" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".session" ".gitignore~" ".gitignore" ".git/" ".DS_Store" ".#init.el" "%backup%~" "#init.el#" "../" "./")
+
+ ("/Users/Amelie/Projects/python/usefulfunctions/" (22881 50081 0 0) "usefulfunc/" "checkinmoves.py~" "checkinmoves.py" "../" "./")
+
+ ("/Users/" (22595 44956 0 0) "Shared/" "Amelie/" ".localized" "../" "./")
+
+ ("/Users/Amelie/" (22879 16213 0 0) "VirtualBox VMs/" "test.tex" "test.sh~" "test.sh" "test.py" "tensorflow3/" "tensorflow/" "Sites/" "SCHMIDT COLBERG_AMELIE 22FEB2015 FRA ICN.rtf" "recommendation/" "Public/" "projs/" "Projects/" "Pictures/" "Notes/" "nltk_data/" "News/" "Music/" "Movies/" "Library/" "java.log.12681" "Google Drive/" "GitHub/" "exercism/" "Downloads/" "Documents/" "Desktop/" "bin/" "Applications/" "Answer to your request_ Request Off-campus course (reference number AC1510 5020).rtf" ".zshrc" ".zshenv" ".zsh" ".zprofile" ".zpreztorc" ".zplug" ".zlogout" ".zlogin" ".Xmodmap" ".Xauthority" ".vimrc" ".viminfo" ".vim" ".Trash/" ".tmux.conf" ".tmux" ".theanorc" ".theano/" ".subversion/" ".ssh/" ".sqlite_history" ".smex-items" ".serverauth.2122" ".screenrc" ".rnd" ".pythonrc.py" ".python_history" ".oracle_jre_usage/" ".npm/" ".mplayer/" ".matplotlib/" ".matlab/" ".local/" ".lesshst" ".ipython/" ".gtkrc-2.0" ".gnus~" ".gnuplot_history" ".gitignore" ".gitconfig" ".gem/" ".fzf.zsh" ".fzf.bash" ".fzf/" ".exercism.json" ".emacs_SHELLNAME" ".emacs.keyfreq" ".emacs.d/" ".DS_Store" ".docker/" ".deepdish.conf" ".cups/" ".continuum/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc~" ".bashrc" ".bash_sessions/" ".bash_profile~" ".bash_profile.pysave" ".bash_profile-anaconda.bak" ".bash_profile" ".bash_login" ".bash_history" ".backups/" ".authinfo~" ".authinfo" ".aspell.en.pws" ".aspell.en.prepl" ".#.#.authinfo.gpg" "*scratch*~" "*scratch*" "*message*-20170606-184833" "*message*-20170606-155615~" "*message*-20170606-155615" "../" "./")
+
+ ("/Users/Amelie/.emacs.d/emacs-for-python/" (22844 51816 0 0) "snippets/" "scripts/" "README.org" "python-libs/" "extensions/" "epy-setup.el" "epy-python.el" "epy-nose.el" "epy-init.el" "epy-editing.el" "epy-completion.el" "epy-bindings.el" "doc/" "COPYING" "CONTRIBUTORS" "ChangeLog" ".gitignore" ".git/" "#epy-python.el#" "../" "./")
+
+ ("/Users/Amelie/Projects/python/tfpractice/" (22874 5022 0 0) "udacity_google/" "test.sh" "tensorflow/" "setup.sh" "requirements.txt" "README.md" "myvenv/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/Amelie/Projects/python/" (22876 36029 0 0) "usefulfunctions/" "tfpractice/" "practicecode/" "django/" "cnn3/" "cnn2/" "brainreader/" ".DS_Store" "../" "./")
+
+ ("/Users/Amelie/Projects/" (22778 58286 0 0) "startbootstrap-small-business-1.0.4/" "SQL/" "racket/" "python/" "myelpa/" "matlab/" "kaggel/" "cpp/" "coursesera_webdev/" ".DS_Store" "../" "./")
+
  ("/Users/Amelie/Library/KeyBindings/" (22278 20622 0 0) "DefaultKeyBinding.dict~" "DefaultKeyBinding.dict" "../" "./")
 
  ("/Users/Amelie/Documents/" (22428 45749 0 0) "~$elie Schmidt.docx" "~$drschapter1.docx" "~$-explained.docx" "theanotut/" "Tae Guk Gi The Brotherhood of War (2004) BluRay 1080p 5.1CH x264 SmallAndHD/" "recursiontrace.rkt~" "recursiontrace.rkt" "paperswantread/" "OsiriX Data/" "neural-coding-old/" "MATLAB/" "Lebenslauf deutsch.docx" "Jerichow (eng subs)  [2008] Christian Petzold/" "Harry Potter Audio Books 1-7; Read by Stephen Fry [MP3]/" "GLpresent.pptx" "formaldocuments/" "fast_sc/" "Complete Pimsleur Korean I + II/" "cnn_exercise/" "CambridgeInternship/" "AUC/" "Anki/" "A.Violent.Prosecutor.2016.Korean.720p.HDRip.800MB-Ganool/" ".localized" ".DS_Store" "../" "./")
 
  ("/Users/Amelie/Documents/CambridgeInternship/" (22356 6665 0 0) "report.tex~" "report.tex" "report.pdf" "report.log" "report.blg" "report.bib~" "report.bib" "report.bbl" "report.aux" "prv_report.pdf" "prv_report.log" "primeministe.tex" "PracticalSolutions/" "Lab9_1.C" "Lab7.C" "Lab 6/" "Lab 5/" "Lab 3/" "figure3.png" "figure2.png" "figure1.png" "contacts.tex" "C++ Practicals/" "C++ Lectures/" "_region_.tex" "_region_.prv/" "_region_.log" "9.1" "8_2.H" "8_2.C" "8_1.H" "8_1.C" "8.2" "7.1" "2layer.png" "11_1.C" "11.1" "10_2.C" "10_1.C" "10.2" "10.1" ".DS_Store" "#report.bib#" "../" "./")
-
- ("/Users/Amelie/.emacs.d/" (22424 59865 0 0) "url/" "recentf" "init.el~" "init.el" "ido.last~" "ido.last" "eproject.lst" "emacs-for-python/" "elpa/" "company-statistics-cache.el" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".session" ".git/" "../" "./")
 
  ("/Users/Amelie/Documents/AUC/Sem6/advprog/" (22391 64107 0 0) "variables.rkt~" "variables/" "Untitled.rkt" "switch.C~" "switch.C" "suminteger.c" "structures.C~" "structures.C" "strings.C" "racket/" "python-style/" "python-guide/" "python/" "pointers.C~" "pointers.C" "peereview/" "peer-review/" "parse-arithmetic/" "otp2/" "ones_zeros.c~" "ones_zeros.c" "nand2tetris/" "max.C" "marieke.rkt~" "marieke.rkt" "hello1.c" "hello.c/" "haystack.C" "functions.C~" "functions.C" "float.c" "doubling_time.C~" "doubling_time.C" "doubling" "datasize.c~" "datasize.c" "code/" "chapter6.rtf" "Chapter 2.docx" "ch7/" "buildalisp1/" "buildalisp/" "a.out" "../" "./")
 
@@ -119,8 +136,6 @@
 
  ("/Users/Amelie/Library/" (22390 41836 0 0) "WebKit/" "Voices/" "VirtualBox/" "TeXShop/" "texlive/" "SyncedPreferences/" "Suggestions/" "Spelling/" "Sounds/" "Services/" "Screen Savers/" "Saved Application State/" "Safari/" "Racket/" "Python/" "PubSub/" "Printers/" "Preferences/" "PreferencePanes/" "Mobile Documents/" "mixpanel-ea416d3e02246452422511b79ae9283f-events.plist" "Metadata/" "Messages/" "Mail/" "Logs/" "LaunchAgents/" "LanguageModeling/" "Keychains/" "Keyboard Layouts/" "KeyBindings/" "iTunes/" "Internet Plug-Ins/" "Input Methods/" "iMovie/" "IdentityServices/" "Group Containers/" "Google/" "GameKit/" "Fonts/" "FontCollections/" "Favorites/" "Dictionaries/" "Developer/" "CoreFollowUp/" "CoreData/" "Cookies/" "Containers/" "Compositions/" "com.apple.nsurlsessiond/" "ColorSync/" "Colors/" "ColorPickers/" "Calendars/" "Caches/" "BlueStacks/" "Autosave Information/" "Audio/" "Assistants/" "Application Support/" "Application Scripts/" "Address Book Plug-Ins/" "Accounts/" ".localized" "../" "./")
 
- ("/Users/Amelie/" (22411 33179 0 0) "VirtualBox VMs/" "test.tex" "Sites/" "SCHMIDT COLBERGAMELIE 22FEB2015 FRA ICN.pdf" "SCHMIDT COLBERG_AMELIE 22FEB2015 FRA ICN.rtf" "recommendation/" "Public/" "projs/" "Projects/" "Pictures/" "nltk_data/" "Music/" "Movies/" "Library/" "java.log.12681" "Google Drive/" "GitHub/" "exercism/" "Downloads/" "Documents/" "Desktop/" "bin/" "Applications/" "Answer to your request_ Request Off-campus course (reference number AC1510 5020).rtf" ".Xauthority" ".viminfo" ".Trash/" ".theanorc" ".theano/" ".subversion/" ".ssh/" ".sqlite_history" ".smex-items" ".serverauth.2122" ".rnd" ".oracle_jre_usage/" ".mplayer/" ".matplotlib/" ".matlab/" ".lesshst" ".ipython/" ".gnuplot_history" ".gitconfig" ".gem/" ".exercism.json" ".emacs.keyfreq" ".emacs.d/" ".DS_Store" ".deepdish.conf" ".cups/" ".continuum/" ".config/" ".CFUserTextEncoding" ".cache/" ".bash_sessions/" ".bash_profile~" ".bash_profile-anaconda.bak" ".bash_profile" ".bash_history" ".backups/" ".aspell.en.pws" ".aspell.en.prepl" "#.bash_profile#" "../" "./")
-
  ("/Users/Amelie/Documents/AUC/Sem6/advprog/buildalisp/" (22331 30441 0 0) "static/" "src/" "splash.html" "source.tar.gz" "README.md" "purchase.html" "mpc_lisp.wsgi" "lispy.py" "LICENSE.md" "invalid.html" "faq.html" "error.log" "download.html" "credits.html" "contents.html" "chapter9_s_expressions.html" "chapter8_error_handling.html" "chapter7_evaluation.html" "chapter6_parsing.html" "chapter5_languages.html" "chapter4_interactive_prompt.html" "chapter3_basics.html" "chapter2_installation.html" "chapter1_introduction.html" "chapter16_bonus_projects.html" "chapter15_standard_library.html" "chapter14_strings.html" "chapter13_conditionals.html" "chapter12_functions.html" "chapter11_variables.html" "chapter10_q_expressions.html" "ch7/" "ch6/" "ch5/" "ch4/" "ch3/" "ch2/" "ch1/" "404.html" ".gitignore" ".gitattributes" ".git/" "../" "./")
 
  ("/Users/Amelie/Documents/Capstone/" (22319 9295 0 0) "test_unzero_pool1.png" "test2.png" "test1.png" "researchprop/" "pool2_wo_weights_image9_max_act_zeroed.png" "pool2_wo_weights_image8_max_act_zeroed.png" "pool2_wo_weights_image7_max_act_zeroed.png" "pool2_wo_weights_image6_max_act_zeroed.png" "pool2_wo_weights_image5_max_act_zeroed.png" "pool2_wo_weights_image4_max_act_zeroed.png" "pool2_wo_weights_image3_max_act_zeroed.png" "pool2_wo_weights_image2_max_act_zeroed.png" "pool2_wo_weights_image1_max_act_zeroed.png" "pool2_wo_weights_image0_max_act_zeroed.png" "pool1_wo_weights.png" "Paper/" "n_voxels.png" "mincost.png" "final.tex~" "final.tex" "final.pdf" "final.log" "final.blg" "final.bbl" "final.aux" "fc8_7_image9_voxel670.png" "fc8_7_image8_voxel670.png" "fc8_7_image7_voxel670.png" "fc8_7_image6_voxel670.png" "fc8_7_image5_voxel670.png" "fc8_7_image4_voxel670.png" "fc8_7_image3_voxel670.png" "fc8_7_image2_voxel670.png" "fc8_7_image1_voxel670.png" "fc8_6_image8_voxel535.png" "fc8_6_image7_voxel535.png" "fc8_6_image6_voxel535.png" "fc8_6_image5_voxel535.png" "fc8_6_image4_voxel535.png" "fc8_6_image3_voxel535.png" "fc8_6_image2_voxel535.png" "fc8_6_image1_voxel535.png" "fc8_6_image0_voxel535.png" "fc7_wo_weights_image9_max_act_zeroed.png" "fc7_wo_weights_image8_max_act_zeroed.png" "fc7_wo_weights_image7_max_act_zeroed.png" "fc7_wo_weights_image6_max_act_zeroed.png" "fc7_wo_weights_image5_max_act_zeroed.png" "fc7_wo_weights_image4_max_act_zeroed.png" "fc7_wo_weights_image3_max_act_zeroed.png" "fc7_wo_weights_image2_max_act_zeroed.png" "fc7_wo_weights_image1_max_act_zeroed.png" "fc7_wo_weights_image0_max_act_zeroed.png" "fc7_wo_weights.pdf" "fc7_7_image9_voxel157.png" "fc7_7_image8_voxel157.png" "fc7_7_image7_voxel157.png" "fc7_7_image6_voxel157.png" "fc7_7_image5_voxel157.png" "fc7_7_image4_voxel157.png" "fc7_7_image3_voxel157.png" "fc7_7_image2_voxel157.png" "fc7_7_image1_voxel157.png" "fc7_7_image0_voxel157.png" "fc7_6_image6_voxel582.png" "fc7_6_image5_voxel582.png" "fc7_6_image4_voxel582.png" "fc7_6_image3_voxel582.png" "fc7_6_image2_voxel582.png" "fc7_6_image1_voxel582.png" "fc7_6_image0_voxel582.png" "fc6_wo_weights_zeroed.png" "fc6_wo_weights_image7_max_act_zeroed.png" "fc6_wo_weights_image6_max_act_zeroed.png" "fc6_wo_weights_image5_max_act_zeroed.png" "fc6_wo_weights_image4_max_act_zeroed.png" "fc6_wo_weights_image3_max_act_zeroed.png" "fc6_wo_weights_image2_max_act_zeroed.png" "fc6_wo_weights_image1_max_act_zeroed.png" "fc6_wo_weights_image0_max_act_zeroed.png" "fc6_wo_weights_image0_max_act.png" "fc6_wo_weights.pdf" "fc6_with_weights_zeroed.png" "fc6_7.pdf" "fc6_6_image9_voxel582.png" "fc6_6_image8_voxel582.png" "fc6_6_image7_voxel582.png" "fc6_6_image7_maxvoxel1168.png" "fc6_6_image6_voxel582.png" "fc6_6_image6_maxvoxel1168.png" "fc6_6_image5_voxel582.png" "fc6_6_image5_maxvoxel1168.png" "fc6_6_image535.png" "fc6_6_image4_voxel582.png" "fc6_6_image4_maxvoxel1168.png" "fc6_6_image3_voxel582.png" "fc6_6_image3_maxvoxel1168.png" "fc6_6_image2_voxel582.png" "fc6_6_image2_maxvoxel1168.png" "fc6_6_image1_voxel582_weight_nonzero.png" "fc6_6_image1_voxel582.png" "fc6_6_image1_maxvoxel1168.png" "fc6_6_image0_voxel885_corrected.png" "fc6_6_image0_voxel885.png" "fc6_6_image0_voxel690_corrected.png" "fc6_6_image0_voxel690.png" "fc6_6_image0_voxel582_weight_nonzero.png" "fc6_6_image0_voxel582_corrected.png" "fc6_6_image0_voxel582.png" "fc6_6_image0_voxel535_corrected.png" "fc6_6_image0_voxel535.png" "fc6_6_image0_maxvoxel1168.png" "fc6_6.pdf" "fc6_2_image9_voxel559.png" "fc6_2_image8_voxel559.png" "fc6_2_image7_voxel559.png" "fc6_2_image6_voxel559.png" "fc6_2_image5_voxel559.png" "fc6_2_image4_voxel559.png" "fc6_2_image3_voxel559.png" "fc6_2_image2_voxel559.png" "fc6_2_image1_voxel559.png" "fc6_2_image0_voxel559.png" "fc6_2.pdf" "fc6_1_image9_voxel250.png" "fc6_1_image8_voxel250.png" "fc6_1_image7_voxel250.png" "fc6_1_image6_voxel250.png" "fc6_1_image5_voxel250.png" "fc6_1_image4_voxel250.png" "fc6_1_image3_voxel250.png" "fc6_1_image2_voxel250.png" "fc6_1_image1_voxel250.png" "fc6_1_image0_voxel250.png" "fc6_1.pdf" "Data/" "conv5_4_wo_weights_image9_max_act_zeroed.png" "conv5_4_wo_weights_image8_max_act_zeroed.png" "conv5_4_wo_weights_image7_max_act_zeroed.png" "conv5_4_wo_weights_image6_max_act_zeroed.png" "conv5_4_wo_weights_image5_max_act_zeroed.png" "conv5_4_wo_weights_image4_max_act_zeroed.png" "conv5_4_wo_weights_image3_max_act_zeroed.png" "conv5_4_wo_weights_image2_max_act_zeroed.png" "conv5_4_wo_weights_image1_max_act_zeroed.png" "conv5_4_wo_weights_image0_max_act_zeroed.png" "conv5_1_wo_weights_image9_max_act_zeroed.png" "conv5_1_wo_weights_image9_max_act_notzeroed.png" "conv5_1_wo_weights_image8_max_act_zeroed.png" "conv5_1_wo_weights_image8_max_act_notzeroed.png" "conv5_1_wo_weights_image7_max_act_zeroed.png" "conv5_1_wo_weights_image7_max_act_notzeroed.png" "conv5_1_wo_weights_image6_max_act_zeroed.png" "conv5_1_wo_weights_image6_max_act_notzeroed.png" "conv5_1_wo_weights_image5_max_act_zeroed.png" "conv5_1_wo_weights_image5_max_act_notzeroed.png" "conv5_1_wo_weights_image4_max_act_zeroed.png" "conv5_1_wo_weights_image4_max_act_notzeroed.png" "conv5_1_wo_weights_image3_max_act_zeroed.png" "conv5_1_wo_weights_image3_max_act_notzeroed.png" "conv5_1_wo_weights_image2_max_act_zeroed.png" "conv5_1_wo_weights_image2_max_act_notzeroed.png" "conv5_1_wo_weights_image1_max_act_zeroed.png" "conv5_1_wo_weights_image1_max_act_notzeroed.png" "conv5_1_wo_weights_image0_max_act_zeroed.png" "conv5_1_wo_weights_image0_max_act_notzeroed.png" "conv4_1_wo_weights_image9_max_act_zeroed.png" "conv4_1_wo_weights_image8_max_act_zeroed.png" "conv4_1_wo_weights_image7_max_act_zeroed.png" "conv4_1_wo_weights_image6_max_act_zeroed.png" "conv4_1_wo_weights_image5_max_act_zeroed.png" "conv4_1_wo_weights_image4_max_act_zeroed.png" "conv4_1_wo_weights_image3_max_act_zeroed.png" "conv4_1_wo_weights_image2_max_act_zeroed.png" "conv4_1_wo_weights_image1_max_act_zeroed.png" "conv4_1_wo_weights_image0_max_act_zeroed.png" "conv3_1_wo_weights_image9_max_act_zeroed.png" "conv3_1_wo_weights_image8_max_act_zeroed.png" "conv3_1_wo_weights_image7_max_act_zeroed.png" "conv3_1_wo_weights_image6_max_act_zeroed.png" "conv3_1_wo_weights_image5_max_act_zeroed.png" "conv3_1_wo_weights_image4_max_act_zeroed.png" "conv3_1_wo_weights_image3_max_act_zeroed.png" "conv3_1_wo_weights_image2_max_act_zeroed.png" "conv3_1_wo_weights_image1_max_act_zeroed.png" "conv3_1_wo_weights_image0_max_act_zeroed.png" "conv2_1_wo_weights_image9_max_act_zeroed.png" "conv2_1_wo_weights_image9_max_act_notzeroed.png" "conv2_1_wo_weights_image8_max_act_zeroed.png" "conv2_1_wo_weights_image8_max_act_notzeroed.png" "conv2_1_wo_weights_image7_max_act_zeroed.png" "conv2_1_wo_weights_image7_max_act_notzeroed.png" "conv2_1_wo_weights_image6_max_act_zeroed.png" "conv2_1_wo_weights_image6_max_act_notzeroed.png" "conv2_1_wo_weights_image5_max_act_zeroed.png" "conv2_1_wo_weights_image5_max_act_notzeroed.png" "conv2_1_wo_weights_image4_max_act_zeroed.png" "conv2_1_wo_weights_image4_max_act_notzeroed.png" "conv2_1_wo_weights_image3_max_act_zeroed.png" "conv2_1_wo_weights_image3_max_act_notzeroed.png" "conv2_1_wo_weights_image2_max_act_zeroed.png" "conv2_1_wo_weights_image2_max_act_notzeroed.png" "conv2_1_wo_weights_image1_max_act_zeroed.png" "conv2_1_wo_weights_image1_max_act_notzeroed.png" "conv2_1_wo_weights_image0_max_act_zeroed.png" "conv2_1_wo_weights_image0_max_act_notzeroed.png" "conv1_1_wo_weights_image9_max_act_zeroed.png" "conv1_1_wo_weights_image9_max_act_notzeroed.png" "conv1_1_wo_weights_image8_max_act_zeroed.png" "conv1_1_wo_weights_image8_max_act_notzeroed.png" "conv1_1_wo_weights_image7_max_act_zeroed.png" "conv1_1_wo_weights_image7_max_act_notzeroed.png" "conv1_1_wo_weights_image6_max_act_zeroed.png" "conv1_1_wo_weights_image6_max_act_notzeroed.png" "conv1_1_wo_weights_image5_max_act_zeroed.png" "conv1_1_wo_weights_image5_max_act_notzeroed.png" "conv1_1_wo_weights_image4_max_act_zeroed.png" "conv1_1_wo_weights_image4_max_act_notzeroed.png" "conv1_1_wo_weights_image3_max_act_zeroed.png" "conv1_1_wo_weights_image3_max_act_notzeroed.png" "conv1_1_wo_weights_image2_max_act_zeroed.png" "conv1_1_wo_weights_image2_max_act_notzeroed.png" "conv1_1_wo_weights_image1_max_act_zeroed.png" "conv1_1_wo_weights_image1_max_act_notzeroed.png" "conv1_1_wo_weights_image0_max_act_zeroed.png" "conv1_1_wo_weights_image0_max_act_notzeroed.png" "Code/" "avcost.png" "all3d.png" ".git/" ".DS_Store" "../" "./")
@@ -129,11 +144,7 @@
 
  ("/Users/Amelie/Projects/python/brainreader/brainreader/kernel_ridge/" (22299 34448 0 0) "solve_df_for_lambda.m" "kernel_ridge.m" ".DS_Store" "../" "./")
 
- ("/Users/Amelie/Projects/" (22297 59825 0 0) "Stimuli.mat" "startbootstrap-small-business-1.0.4/" "SQL/" "racket/" "python/" "myelpa/" "matlab/" "kaggel/" "EstimatedResponses.mat" "cpp/" ".DS_Store" "../" "./")
-
  ("/Users/Amelie/Documents/AUC/Sem6/advprog/hello.c/" (22296 51402 0 0) "../" "./")
-
- ("/Users/" (22242 42786 0 0) "Shared/" "Guest/" "Deleted Users/" "Amelie/" ".localized" "../" "./")
 
  ("/Users/Amelie/Projects/python/django/groupassignment/our-awesome-website/home/templates/home/" (22291 30443 0 0) "home.html" "../" "./")
 
@@ -166,8 +177,6 @@
  ("/Users/Amelie/.ipython/" (22182 17761 0 0) "profile_default/" "nbextensions/" "extensions/" "../" "./")
 
  ("/Users/Amelie/.emacs.d/elpa/git-commit-20160406.905/" (22279 29604 0 0) "git-commit.elc" "git-commit.el" "git-commit-pkg.elc" "git-commit-pkg.el" "git-commit-autoloads.el~" "git-commit-autoloads.el" "../" "./")
-
- ("/Users/Amelie/Projects/python/" (22271 36344 0 0) "django/" "brainreader/" ".DS_Store" "../" "./")
 
  ("/Users/Amelie/Projects/python/django/girlstut/myblog/" (22255 48611 0 0) "wsgi.py" "urls.py" "settings.py" "__init__.py" "../" "./")
 

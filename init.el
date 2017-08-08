@@ -1,5 +1,3 @@
-
-
 (setq package-archives '
       (("gnu" . "https://elpa.gnu.org/packages/")
        ("marmalade" . "https://marmalade-repo.org/packages/")
@@ -10,6 +8,49 @@
 (elpy-enable)
 
 (setenv "PYTHONPATH" "/usr/local/bin/python")
+
+;; initial window - set for max book pro 13"
+(setq initial-frame-alist
+      '(
+        (width . 177) ; character
+        (height . 47) ; lines
+        ))
+
+;; default/sebsequent window
+(setq default-frame-alist
+      '(
+        (width . 176) ; character
+        (height . 45) ; lines
+        ))
+
+
+;;; opens ansi term and  init file in to windows next to each other 
+
+(setq initial-buffer-choice "*ansi-term*")
+
+(defun switch-to-next-window ()
+  (interactive)
+  (let* ((next-window (get-buffer-window (other-buffer (current-buffer) t))))
+    (select-window next-window)))
+
+(add-hook 'emacs-startup-hook
+          (lambda ()
+            (ansi-term "/bin/bash")
+            (split-window-horizontally)
+            (find-file-other-window "~/.emacs.d/init.el")))
+
+
+
+
+;; (switch-to-next-window)
+;; (setq initial-buffer-choice "~/.emacs.d/init.el")
+
+
+;; need to do this to gat the same path variabe, otherwise emacs uses the path in /etc/ and
+;; not the one from /usr/local/....
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-copy-env "PYTHONPATH")
+  (exec-path-from-shell-initialize))
 
 (when (>= emacs-major-version 24))
 
@@ -23,99 +64,19 @@
 (require 'ido)
 (ido-mode t)
 
-;; autopep8 configuration
+
+;; tramp mode
+(require 'tramp)
+(setq tramp-default-method "ssh")
+(setenv "ESHELL" "bash")
 
 
-;enable line numbers
-(global-linum-mode t)
-
-;;set line break to 80
-(setq-default fill-column 80)
-(add-hook 'text-mode-hook 'turn-on-auto-fill)	
-(add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
-
-;differemt system settings					
-(defun system-is-mac ()
-  (interactive)
-  (string-equal system-type "darwin"))
-
- (defun system-is-linux ()
-   (interactive)
-   (string-equal system-type "gnu/linux"))
-
- ; set command key to be meta instead of option
- (if (system-is-mac)
-     (setq ns-command-modifier 'meta))
-
-; set path for emacs in mac -systm since faulty
-(let ((default-directory  "~/.emacs.d/elpa/"))
-  (normal-top-level-add-subdirs-to-load-path))
-;fixes path problem for windows 
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
-;; (setenv "PATH" (concat (getenv "PATH") ":/sw/bin"))
-;; ;;(setq exec-path (append exec-path '("/sw/bin")))
-;; (setq exec-path (append exec-path '("/Library/TeX/texbin")))
-
-;;  ; set PATH, because we don't load .bashrc
-;; (setenv
-;;  "PATH" (concat
-;;    "$HOME/bin:"
-;;    "/bin:"
-;;    "/Usr/bin:"
-;;    "/sbin:"
-;;    "/usr/sbin:"
-;;    "/usr/local/bin:"
-;;    "/usr/local/sbin"))
-
-;; ; Set PYTHONPATH, because we don't load .bashrc
-;; (setenv "PYTHONPATH" "/usr/local/lib/python2.7/site-packages:")
-
-; default window width and height
-(defun custom-set-frame-size ()
-  (add-to-list 'default-frame-alist '(height . 56))
-  (add-to-list 'default-frame-alist '(width . 100)))
-(custom-set-frame-size)
-(add-hook 'before-make-frame-hook 'custom-set-frame-size)
-
-;;;; Interface and typing
-;; turn on highlight matching brackets when cursor is on one
-(show-paren-mode 1)
-(setq show-paren-style 'mixed) ; highlight entire expression
+(require 'package)
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 
 
-;; (require 'fill-column-indicator)
-;; (define-globalized-minor-mode
-;;  global-fci-mode fci-mode (lambda () (fci-mode 1)))
-;; (global-fci-mode t)
-
-;; ansi-term 
-(defun visit-term-buffer ()
-  "Create or visit a terminal buffer."
-  (interactive)
-  (if (not (get-buffer "*ansi-term*"))
-      (progn
-        (split-window-sensibly (selected-window))
-        (other-window 1)
-        (ansi-term (getenv "SHELL")))
-    (switch-to-buffer-other-window "*ansi-term*")))
-
-(global-set-key (kbd "C-c t") 'visit-term-buffer)
-
-;; Yas snippet
-(require 'yasnippet)
-(yas-global-mode 1)
-(add-hook 'term-mode-hook (lambda()
-			    (setq yas-dont-activate t)))
-
-;; Magit
-(global-set-key (kbd "C-x g") 'magit-status)
-
-; python-mode
-;; Mandatory
-(load-file "~/.emacs.d/emacs-for-python/epy-init.el")
-(add-to-list 'load-path "~/.emacs.d/emacs-for-python/") ;; tell where to load the various files
-
+;; loads emacs for python stuuuf
+(add-to-list 'load-path "~/.emacs.d/emacs-for-python/") 
 ;; Each of them enables different parts of the system.
 ;; Only the first two are needed for pep8, syntax check.
 (require 'epy-setup) ;; It will setup other loads, it is required!
@@ -135,10 +96,22 @@
 (global-set-key [f3] 'flymake-goto-next-error)
 
 (require 'pep8)
-
 ;; Next two lines are the checks to do. You can add more if you wish.
 (epy-setup-checker "pyflakes %f") ;; For python syntax check
 (epy-setup-checker "pep8 -r %f") ;; For pep8 check
+
+
+;; virtualenvironemt wrapper
+(require 'auto-virtualenvwrapper)
+(add-hook 'python-mode-hook #'auto-virtualenvwrapper-activate)
+
+;; -*- mode: elisp -*-
+
+;; Disable the splash screen (to enable it agin, replace the t with 0)
+(setq inhibit-splash-screen t)
+
+;; Enable transient mark mode
+(transient-mark-mode 1)
 
 
 ;; (require 'python-mode)
@@ -172,7 +145,7 @@
 (require 'ac-math) ; package should be installed first 
 (defun my-ac-latex-mode () ; add ac-sources for latex
    (setq ac-sources
-         (append '(ac-source-math-unicode
+         (append '(ac-source-math-
            ac-source-math-latex
            ac-source-latex-commands)
                  ac-sources)))
@@ -186,7 +159,27 @@
 (setq ac-auto-show-menu t)
 (global-auto-complete-mode t) 
 
-;;(load "preview-latex.el" nil t t)
+;; Email settings
+
+(setq user-full-name "Amelie Schmidt-Colberg")
+(setq user-mail-address "amelie.schmidtcolberg@gmail.com")
+;(setq starttls-use-gnutls nil)
+(setq send-mail-function 'smtpmail-send-it
+message-send-mail-function 'smtpmail-send-it
+smtpmail-starttls-credentials
+'(("smtp.gmail.com" 587 nil nil))
+smtpmail-auth-credentials
+(expand-file-name "~/.authinfo")
+smtpmail-default-smtp-server "smtp.gmail.com"
+smtpmail-smtp-server "smtp.gmail.com"
+smtpmail-smtp-service 587
+smtpmail-debug-info t
+starttls-extra-arguments nil
+starttls-gnutls-program "/usr/local/Cellar/gnutls/3.5.12_2/bin/gnutls-cli"
+starttls-use-gnutls nil
+)
+(require 'smtpmail)
+;; (load "preview-latex.el" nil t t)
 
 ;; (if (system-is-mac)
 ;;  (progn
@@ -233,21 +226,44 @@
 ;; (require 'autopair)
 ;; (autopair-global-mode 1)
 ;; (setq autopair-autowrap t)
+;;(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+;;'(custom-safe-themes
+  ;; (quote
+    ;;("3ac266781ee0ac3aa74a6913a1506924cad669f111564507249f0ffa7c5e4b53" "26ce7eea701bfd143ac536e6805224cff5598b75effb60f047878fe9c4833ae4"
+;;     default))))
+;;(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+; )
+;(put 'upcase-region 'disabled nil)
+
+;;; i python notebook settings
+(require 'ein)
+(setq ein:use-auto-complete 1)
+
+
+
+;; require ()
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
+ '(package-selected-packages
    (quote
-    ("3ac266781ee0ac3aa74a6913a1506924cad669f111564507249f0ffa7c5e4b53" "26ce7eea701bfd143ac536e6805224cff5598b75effb60f047878fe9c4833ae4"
-    default))))
+    (w3m ein seoul256-theme python-mode pyflakes py-autopep8 pep8 peacock-theme org magit leuven-theme fill-column-indicator exec-path-from-shell elpy auto-virtualenv auto-complete-auctex auctex ac-math)))
+ '(send-mail-function (quote smtpmail-send-it))
+ '(smtpmail-smtp-server "smtp.gmail.com")
+ '(smtpmail-smtp-service 25))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(put 'upcase-region 'disabled nil)
-
-require ()
