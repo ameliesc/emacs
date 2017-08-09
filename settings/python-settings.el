@@ -2,7 +2,7 @@
 ;;;;;;;;;   python    ;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-
+;; source: https://github.com/gabrielelanaro/emacs-for-python
 
 
 ;; Mandatory
@@ -21,6 +21,7 @@
 ;; Define f10 to previous error
 ;; Define f11 to next error
 (require 'epy-bindings) ; For my suggested keybindings [optional]
+(epy-setup-ipython)
 
 ;; Some shortcut that do not collide with gnome-terminal,
 ;; otherwise, "epy-bindings" define f10 and f11 for them.
@@ -33,6 +34,8 @@
 (epy-setup-checker "pyflakes %f") ;; For python syntax check
 (epy-setup-checker "pep8 -r %f") ;; For pep8 check
 
-
+(global-hl-line-mode t) ;; To enable
+(set-face-background 'hl-line "black") ;; change with the color that you like
+                                       ;; for a list of colors: http://raebear.net/comp/emacscolors.html
 
 (provide 'python-settings)
