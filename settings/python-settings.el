@@ -29,6 +29,7 @@
 (global-set-key [f3] 'flymake-goto-next-error)
 
 (require 'py-autopep8)
+(require 'pyflakes)
 
 ;; Next two lines are the checks to do. You can add more if you wish.
 (epy-setup-checker "pyflakes %f") ;; For python syntax check
