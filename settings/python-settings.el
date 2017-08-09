@@ -28,14 +28,18 @@
 (global-set-key [f2] 'flymake-goto-prev-error)
 (global-set-key [f3] 'flymake-goto-next-error)
 
-(require 'pep8)
+(require 'py-autopep8)
 
 ;; Next two lines are the checks to do. You can add more if you wish.
 (epy-setup-checker "pyflakes %f") ;; For python syntax check
-(epy-setup-checker "pep8 -r %f") ;; For pep8 check
+(epy-setup-checker "py-autopep8 -r %f") ;; For pep8 check
 
 (global-hl-line-mode t) ;; To enable
 (set-face-background 'hl-line "black") ;; change with the color that you like
                                        ;; for a list of colors: http://raebear.net/comp/emacscolors.html
+
+(require 'highlight-indentation)
+(add-hook 'python-mode-hook 'highlight-indentation)
+
 
 (provide 'python-settings)
