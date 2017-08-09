@@ -1,1 +1,16 @@
-~
+~*
+*~
+#*#
+autosave-list/
+elpa/
+elpa-*/
+ido.last
+todo/
+tramp/
+url/
+emacs-for-python/
+abbrev-defs
+ac-comphist.dat
+eproject.lst
+tramp
+recentf
