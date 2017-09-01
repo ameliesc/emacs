@@ -2,10 +2,13 @@
 ;;;;;;;;;   python    ;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+
+
+;; ipython notebook
+(require 'ein)
+
 ;; source: https://github.com/gabrielelanaro/emacs-for-python
-
-
-;; Mandatory
+;; Mandatory 
 (load-file "~/.emacs.d/emacs-for-python/epy-init.el")
 (add-to-list 'load-path "~/.emacs.d/emacs-for-python/") ;; tell where to load the various files
 
