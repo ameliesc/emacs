@@ -8,8 +8,9 @@ ido.last
 todo/
 tramp/
 url/
+request/
 emacs-for-python/
-abbrev-defs
+abbrev_defs
 ac-comphist.dat
 eproject.lst
 tramp
