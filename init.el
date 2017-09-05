@@ -43,7 +43,7 @@
 
 (require 'latex-settings)
 
-
+(require 'R)
 ;;; Source https://github.com/jhamrick/emacs/blob/master/.emacs
 ;---------------------------------------------------------------------
 ;; Put auto 'custom' changes in a separate file (this is stuff like
