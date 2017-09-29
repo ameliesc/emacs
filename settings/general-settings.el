@@ -1,17 +1,23 @@
 ;;enable line numbers
 (global-linum-mode t)
 
+; highlight current line
+(global-hl-line-mode t)
+
 ;;set line break to 80
 (setq-default fill-column 80)
 (add-hook 'text-mode-hook 'turn-on-auto-fill)	
 (add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
 
+;; parenthesis matching
+;; auto close bracket insertion. New in emacs 24
+(electric-pair-mode 1)
 
 ;; set command key to be meta instead of option
  (if (system-is-mac)
      (setq ns-command-modifier 'meta))
 
-;; set path for emacs in mac -systm since faulty
+;; set path for emacs in ㅜmac -systm since faulty
 (let ((default-directory  "~/.emacs.d/elpa/"))
   (normal-top-level-add-subdirs-to-load-path))
 
@@ -20,10 +26,10 @@
   (exec-path-from-shell-initialize))
 
 ;; no idea why - ToDo
-(setenv "PYTHONPATH" "/usr/local/bin/python")
+;(setenv "PYTHONPATH" "/usr/local/bin/python")
 
 ;;gotta figure out myself why this is here
-(setq exec-path (append "/usr/local/bin" exec-path))
+;(setq exec-path (append "/usr/local/bin" exec-path))
 
 (setq ispell-program-name "aspell")
 
