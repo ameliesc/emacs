@@ -19,17 +19,17 @@
 
 ;; set path for emacs in ㅜmac -systm since faulty
 (let ((default-directory  "~/.emacs.d/elpa/"))
-  (normal-top-level-add-subdirs-to-load-path))
+  (normal-top-level-add-subdirs-to-load-path)) ; interferes with yassnippet add ".nosearch" file to directory causing error
 
 ;;fixes path problem for windows 
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
-;; no idea why - ToDo
-;(setenv "PYTHONPATH" "/usr/local/bin/python")
+;; lets buffer show full filenameand path
+(setq frame-title-format
+      (list (format "%s %%S: %%j " (system-name))
+        '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
 
-;;gotta figure out myself why this is here
-;(setq exec-path (append "/usr/local/bin" exec-path))
 
 (setq ispell-program-name "aspell")
 

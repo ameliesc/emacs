@@ -13,17 +13,24 @@
 (require 'package)
 (add-to-list 'package-archives
              '("elpy" . "http://jorgenschaefer.github.io/packages/"))
+(setq elpy-set-test-runner "pytest")
 
 (elpy-enable)
 (define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
 (define-key global-map (kbd "C-c o") 'iedit-mode)
+(define-key elpy-mode-map (kbd "C-c m") 'elpy-company-backend)
+
+(add-hook 'elpy-mode-hook
+    (lambda ()
+    (local-unset-key (kbd "M-TAB"))
+    (define-key elpy-mode-map (kbd "C-c m") 'elpy-company-backend)))
 
 (setq elpy-rpc-backend "jedi")
+(setq elpy-set-test-runner "pytest") ; change if other test runner is used
+(setq python-shell-completion-native-enable nil) ;; removes annoying warning
+(setq python-shell-interpreter "ipython2") ;; other interpreter does silly things 
 
-;; lets buffer show full filenameand path
-(setq frame-title-format
-      (list (format "%s %%S: %%j " (system-name))
-        '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
+
 ;; define various custom functions
 (require 'custom-functions)
 
