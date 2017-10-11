@@ -7,6 +7,9 @@
 ;; ipython notebook
 (require 'ein)
 
+(require 'py-autopep8)
+(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
+
 
 ;; source: https://github.com/gabrielelanaro/emacs-for-python
 ;; Mandatory 

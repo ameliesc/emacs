@@ -1,3 +1,4 @@
+
 (add-to-list 'load-path "~/.emacs.d/settings")
 
 (setq package-archives '
@@ -8,6 +9,14 @@
 
 (package-initialize)
 
+;; define various custom functions
+(require 'custom-functions)
+
+;; configure general settings
+(require 'general-settings)
+
+
+(require 'custom)
 
 
 (require 'package)
@@ -31,14 +40,6 @@
 (setq python-shell-interpreter "ipython2") ;; other interpreter does silly things 
 
 
-;; define various custom functions
-(require 'custom-functions)
-
-;; configure general settings
-(require 'general-settings)
-
-
-(require 'custom)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;

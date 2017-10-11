@@ -19,7 +19,8 @@
 
 ;; set path for emacs in ㅜmac -systm since faulty
 (let ((default-directory  "~/.emacs.d/elpa/"))
-  (normal-top-level-add-subdirs-to-load-path)) ; interferes with yassnippet add ".nosearch" file to directory causing error
+  (normal-top-level-add-subdirs-to-load-path)
+  ) ; interferes with yassnippet add ".nosearch" file to directory causing error
 
 ;;fixes path problem for windows 
 (when (memq window-system '(mac ns))
