@@ -11,6 +11,24 @@
 (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
 
+;; elpy settings
+
+
+(elpy-enable)
+(define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
+(define-key global-map (kbd "C-c o") 'iedit-mode)
+(define-key elpy-mode-map (kbd "C-c m") 'elpy-company-backend)
+(setq elpy-set-test-runner "pytest")
+
+(add-hook 'elpy-mode-hook
+    (lambda ()
+    (local-unset-key (kbd "M-TAB"))
+    (define-key elpy-mode-map (kbd "C-c m") 'elpy-company-backend)))
+
+(setq elpy-rpc-backend "jedi")
+(setq elpy-set-test-runner "pytest") ; change if other test runner is used
+(setq python-shell-completion-native-enable nil) ;; removes annoying warning
+(setq python-shell-interpreter "ipython2") ;; other interpreter does silly things 
 ;; source: https://github.com/gabrielelanaro/emacs-for-python
 ;; Mandatory 
 ;; (load-file "~/.emacs.d/emacs-for-python/epy-init.el")
@@ -49,6 +67,13 @@
 
 (require 'highlight-indentation)
 (add-hook 'python-mode-hook 'highlight-indentation)
+
+(add-hook 'python-mode-hook
+	  (lambda ()
+	    (setq-default indent-tabs-mode t)
+	    (setq-default tab-width 4)
+	    (setq-default py-indent-tabs-mode t)
+	    (add-to-list 'write-file-functions 'delete-trailing-whitespace)))
 
 (elpy-enable)
 
