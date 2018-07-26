@@ -55,6 +55,8 @@
 
 (require 'R)
 
+(require 'c++-settings)
+
 
 ;;; Source https://github.com/jhamrick/emacs/blob/master/.emacs
 ;---------------------------------------------------------------------

@@ -26,6 +26,10 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
+;; attempt to fix emacs not finding flake8
+(setq exec-path (append exec-path '("/usr/local/bin")))
+
+
 ;; lets buffer show full filenameand path
 (setq frame-title-format
       (list (format "%s %%S: %%j " (system-name))
