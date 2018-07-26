@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: lagrangian
+# key: lagr
+# --
+\mathcal{L}$0

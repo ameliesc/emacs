@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: lagrangian
+# key: lagr
+# requires \userpackage{asmssymb}
+\mathcal{L}$0

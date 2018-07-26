@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: dollar brackets
+# key: $
+# --
+$$0$
