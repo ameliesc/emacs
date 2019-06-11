@@ -40,7 +40,11 @@
 (ac-config-default)
 (setq ac-auto-start nil)            ; if t starts ac at startup automatically
 (setq ac-auto-show-menu t)
-(global-auto-complete-mode t) 
+(global-auto-complete-mode t)
+
+(font-lock-add-keywords 'latex-mode
+                        '(("addlines" . font-lock-warning-face)
+                          ("largerpage" . font-lock-warning-face)))
 
 ;;; note takes alot of CPU especially for big files, if cpu fails comment out above  uncomment following setting
 ;; (setq ispell-program-name "aspell") ; could be ispell as well, depending on your preferences
@@ -48,7 +52,47 @@
 ;; (add-hook 'LaTeX-mode-hook 'flyspell-mode)
 ;; (add-hook 'LaTeX-mode-hook 'flyspell-buffer)
 
+(defun texcount ()
+  (interactive)
+  (let*
+    ( (this-file (buffer-file-name))
+      (enc-str (symbol-name buffer-file-coding-system))
+      (enc-opt
+        (cond
+          ((string-match "utf-8" enc-str) "-utf8")
+          ((string-match "latin" enc-str) "-latin1")
+          ("-encoding=guess")
+      ) )
+      (word-count
+        (with-output-to-string
+          (with-current-buffer standard-output
+            (call-process "texcount" nil t nil "-0" enc-opt this-file)
+    ) ) ) )
+    (message word-count)
+) )
+(add-hook 'LaTeX-mode-hook (lambda () (define-key LaTeX-mode-map "\C-cw" 'texcount)))
+(add-hook 'latex-mode-hook (lambda () (define-key latex-mode-map "\C-cw" 'texcount)))
+(add-hook 'LaTeX-mode-hook '(flyspell-mode t))
 
+
+;;
+;; TeXcount setup for AUCTeX
+;;
+(require 'tex)
+(add-to-list 'TeX-command-list
+	     (list "TeXcount" "texcount %s.tex" 'TeX-run-command nil t))
+
+
+;; flysepl mode
+(require 'flyspell-lazy)
+
+(flyspell-lazy-mode 1)
+
+(flyspell-mode 1)   
+;;
+;; fly pop up
+(define-key flyspell-mode-map (kbd "C-;") 'flyspell-popup-correct)
+(global-set-key (kbd "C-x C-k") 'flyspell-auto-correct-word)
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;OLD;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;

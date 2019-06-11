@@ -22,6 +22,10 @@
   (normal-top-level-add-subdirs-to-load-path)
   ) ; interferes with yassnippet add ".nosearch" file to directory causing error
 
+
+;; auto loads buffers when files changed on disk
+(global-auto-revert-mode t)
+
 ;;fixes path problem for windows 
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))

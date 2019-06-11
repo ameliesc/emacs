@@ -1,6 +1,6 @@
 ; load theme
-					;(load-theme 'peacock t)
-(load-theme 'twilight-bright t)
+(load-theme 'peacock t)
+;(load-theme 'twilight-bright t) ;; when working outside make this change automatic one day with keyboard shorcut 
 
 ;; ;;; Monaco font for programming (and some other modes)
 ;; (defvar dh-monaco-face-remapping-alist nil)
@@ -64,7 +64,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(highlight ((t (:background "dark cyan"))))
- '(hl-line ((t (:background "selectedControlColor")))))
+ '(hl-line ((t (:background "indian red")))))
 (put 'upcase-region 'disabled nil)
 
 (provide 'custom)

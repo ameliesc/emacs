@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <18/07/02 13:49:42 /Users/Amelie/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <19/05/28 14:30:50 /Users/Amelie/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -118,10 +118,7 @@
   ("tmpdir" "/tmp")
   ("touch-t" t)
   ("touch" "\\touch"))
- (["scp" nil "ssh" nil nil]
-  nil)
  (["ssh" nil "pollock" nil nil]
-  ("first-password-request" nil)
   ("uname" "Linux 4.4.0-116-generic")
   ("locale" "LC_ALL=en_US.utf8")
   ("test" "test")
@@ -138,8 +135,15 @@
   ("gid-integer" 1000)
   ("readlink" "\\readlink")
   ("git" "\\git")
+  ("~" "/home/amelie")
+  ("ls" "/bin/ls --color=never")
+  ("ls-dired" t)
   ("env-u-option" t)
   ("uid-integer" 1002)
   ("tmpdir" "/tmp")
   ("touch-t" t)
-  ("touch" "\\touch")))
+  ("touch" "\\touch"))
+ (["scp" nil "ssh" nil nil]
+  nil)
+ (["ssh" nil "pollock.snu.vision" nil nil]
+  nil))
