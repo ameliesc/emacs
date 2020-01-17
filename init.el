@@ -1,3 +1,4 @@
+
 (add-to-list 'load-path "~/.emacs.d/settings")
 
 (setq package-archives '
@@ -19,8 +20,8 @@
 
 
 (require 'package)
-(add-to-list 'package-archives
-             '("elpy" . "http://jorgenschaefer.github.io/packages/"))
+;(add-to-list 'package-archives
+;             '("elpy" . "http://jorgenschaefer.github.io/packages/"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;; UTILITIES   ;;;;;
@@ -49,7 +50,7 @@
 (require 'ido)
 (ido-mode t)
 
-;(require 'python-settings)
+(require 'python-settings)
 
 (require 'latex-settings)
 
@@ -62,6 +63,6 @@
 ;---------------------------------------------------------------------
 ;; Put auto 'custom' changes in a separate file (this is stuff like
 ;; custom-set-faces and custom-set-variables)
-(load 
+(load
  (setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))
  'noerror)

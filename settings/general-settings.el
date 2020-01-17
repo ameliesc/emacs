@@ -27,8 +27,8 @@
 (global-auto-revert-mode t)
 
 ;;fixes path problem for windows 
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
+;(when (memq window-system '(mac ns))
+;  (exec-path-from-shell-initialize))
 
 ;; attempt to fix emacs not finding flake8
 (setq exec-path (append exec-path '("/usr/local/bin")))
