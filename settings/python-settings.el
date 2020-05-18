@@ -6,7 +6,7 @@
 
 ;; ipython notebook
 ;(require 'ein)
-;(require 'py-autopep8)
+(require 'py-autopep8)
 
 
 
@@ -15,8 +15,9 @@
 
 
 (elpy-enable)
+(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
-;(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
+(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
 ;; (setq elpy-rpc-python-command "python3")
 ;; (setq elpy-rpc-backend "jedi")

@@ -23,7 +23,7 @@
 (yas-global-mode 1)
 
 ;; auto-complete setup, sequence is important
-(require 'auto-complete)
+(require 'auto-complete-auctex)
 (add-to-list 'ac-modes 'latex-mode) ; beware of using 'LaTeX-mode instead
 (require 'ac-math) ; package should be installed first 
 (defun my-ac-latex-mode () ; add ac-sources for latex

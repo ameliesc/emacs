@@ -52,7 +52,7 @@
 
 (require 'python-settings)
 
-(require 'latex-settings)
+;(require 'latex-settings)  --- currently buggy need to resetup
 
 (require 'R)
 
