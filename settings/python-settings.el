@@ -19,6 +19,7 @@
 
 (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
+
 ;; (setq elpy-rpc-python-command "python3")
 ;; (setq elpy-rpc-backend "jedi")
 ;; (setq python-shell-interpreter "jupyter"
@@ -27,9 +28,9 @@
 ;; (add-to-list 'python-shell-completion-native-disabled-interpreters
 ;;              "jupyter")
 
-;; (setq python-check-command "flake8"
-;;             python-shell-interpreter (or (executable-find "python3")
-;;                                          (executable-find "python")))
+(setq python-check-command "flake8"
+             python-shell-interpreter (or (executable-find "python3")
+                                          (executable-find "python")))
 
 ;; (define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
 ;; (define-key global-map (kbd "C-c o") 'iedit-mode)

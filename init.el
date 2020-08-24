@@ -35,10 +35,15 @@
       (reverse
        (split-string
         (delete-and-extract-region beg end) "\\b"))))
+
 (require 'ansi-settings)
 
 ;(require 'yas-snippet-settings)
 
+(use-package editorconfig
+  :ensure t
+  :config
+  (editorconfig-mode 1))
 
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;    MODES   ;;;;;

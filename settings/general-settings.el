@@ -50,6 +50,7 @@
 (setq show-paren-style 'mixed) ; highlight entire expression
 
 
+
 (global-set-key (kbd "C-c t") 'visit-term-buffer)
 
 ;; get rid of annoying startup screen
@@ -58,12 +59,19 @@
 ;; open emacs split into 2 windows with terminal and init file
 (add-hook 'emacs-startup-hook
           (lambda ()
-            (ansi-term "/bin/bash")
+            (ansi-term "/bin/zsh")
             (split-window-horizontally)
             (find-file-other-window "~/.emacs.d/init.el")))
 
 ;; start in full screen mode
 (require 'maxframe)
 (add-hook 'window-setup-hook 'maximize-frame t)
+
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
+; automatically refresh buffers when changed on disk
+(global-auto-revert-mode t)
 
 (provide 'general-settings)
