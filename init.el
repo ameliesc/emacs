@@ -61,6 +61,8 @@
 
 (require 'R)
 
+(require 'sql-settings)
+
 (require 'c++-settings)
 
 

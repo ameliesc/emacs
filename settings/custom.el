@@ -1,7 +1,7 @@
 ; load theme
 (load-theme 'peacock t)
-;(load-theme 'twilight-bright t) ;; when working outside make this change automatic one day with keyboard shorcut
-
+;;(load-theme 'twilight-bright t) ;; when working outside make this change automatic one day with keyboard shorcut
+;;(load-theme 'hydandata-light t) ;;
 ;; ;;; Monaco font for programming (and some other modes)
 ;; (defvar dh-monaco-face-remapping-alist nil)
 
@@ -51,8 +51,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (flycheck-pyflakes pyflakes project-shells projectile projectile-git-autofetch editorconfig yaml-mode magit peacock-theme elpy py-autopep8 paredit maxframe twilight-bright-theme s req-package pyvenv highlight-indentation company auto-complete-auctex auctex))))
+   '(sql-indent format-sql mmm-jinja2 mmm-mode hydandata-light-theme helm-projectile flycheck-pyflakes pyflakes project-shells projectile projectile-git-autofetch editorconfig yaml-mode magit peacock-theme py-autopep8 paredit maxframe twilight-bright-theme s req-package pyvenv highlight-indentation company auctex))
+ '(projectile-mode t nil (projectile)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

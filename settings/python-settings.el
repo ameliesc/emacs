@@ -17,7 +17,9 @@
 (elpy-enable)
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
-(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
+;; (add-hook 'elpy-mode-hook (lambda ()
+;;                             (add-hook 'before-save-hook
+;;                                       'elpy-format-code t nil)))
 
 
 ;; (setq elpy-rpc-python-command "python3")
@@ -28,9 +30,9 @@
 ;; (add-to-list 'python-shell-completion-native-disabled-interpreters
 ;;              "jupyter")
 
-(setq python-check-command "flake8"
-             python-shell-interpreter (or (executable-find "python3")
-                                          (executable-find "python")))
+;; (setq python-check-command "flake8"
+;;              python-shell-interpreter (or (executable-find "python3")
+;;                                           (executable-find "python")))
 
 ;; (define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
 ;; (define-key global-map (kbd "C-c o") 'iedit-mode)
@@ -51,14 +53,6 @@
 ;; ;; (load-file "~/.emacs.d/emacs-for-python/epy-init.el")
 ;; ;; (add-to-list 'load-path "~/.emacs.d/emacs-for-python/") ;; tell where to load the various files
 
-;; ;; ;; Each of them enables different parts of the system.
-;; ;; ;; Only the first two are needed for pep8, syntax check.
-;; ;; (require 'epy-setup) ; It will setup other loads, it is required!
-;; ;; (require 'epy-python) ; If you want the python facilities [optional]
-;; ;; (require 'epy-completion) ; If you want the autocompletion settings [optional]
-;; ;; (require 'epy-editing) ; For configurations related to editing [optional]
-;; ;; ;; [newer version of emacs-for-python]
-;; ;; (require 'epy-nose) ;;For shortcut to call nosetests [optional]
 
 ;; ;; ;; Define f10 to previous error
 ;; ;; ;; Define f11 to next error
