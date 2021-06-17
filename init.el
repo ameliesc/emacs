@@ -61,10 +61,10 @@
 
 (require 'R)
 
-(require 'sql-settings)
+
 
 (require 'c++-settings)
-
+(require 'sql-settings)
 
 ;;; Source https://github.com/jhamrick/emacs/blob/master/.emacs
 ;---------------------------------------------------------------------
