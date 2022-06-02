@@ -9,18 +9,18 @@
 
 (package-initialize)
 
-;; Declare packages
-(setq my-packages
-      '(maxframe
-	projectile
-	elpy
-	py-autopep8
-	peacock-theme))
+;; ;; Declare packages
+;; (setq my-packages
+;;       '(maxframe
+;; 	projectile
+;; 	elpy
+;; 	py-autopep8
+;; 	peacock-theme))
 
-;; Iterate on packages and install missing ones
-(dolist (pkg my-packages)
-  (unless (package-installed-p pkg)
-    (package-install pkg)))
+;; ;; Iterate on packages and install missing ones
+;; (dolist (pkg my-packages)
+;;   (unless (package-installed-p pkg)
+;;     (package-install pkg)))
 
 ;; define various custom functions
 (require 'custom-functions)
@@ -63,12 +63,9 @@
 
 (require 'python-settings)
 
-;(require 'latex-settings)  --- currently buggy need to resetup
+;(require 'latex-settings)  --- currently buggy need to fix this
 
 (require 'R)
-
-
-
 (require 'c++-settings)
 ;(require 'sql-settings)
 
