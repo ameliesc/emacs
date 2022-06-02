@@ -13,18 +13,18 @@
 ;; (setq my-packages
 ;;       '(list of packages))
 
-(setq my-packages
-      '(
-	discover sql-indent format-sql mmm-jinja2 mmm-mode
-	hydandata-light-theme helm-projectile flycheck-pyflakes project-shells
-        projectile projectile-git-autofetch editorconfig yaml-mode magit peacock-theme
-	py-autopep8 paredit maxframe twilight-bright-theme req-package pyvenv
-	highlight-indentation company auctex))
+;; (setq my-packages
+;;       '(
+;; 	discover sql-indent format-sql mmm-jinja2 mmm-mode
+;; 	hydandata-light-theme helm-projectile flycheck-pyflakes project-shells
+;;         projectile projectile-git-autofetch editorconfig yaml-mode magit peacock-theme
+;; 	py-autopep8 paredit maxframe twilight-bright-theme req-package pyvenv
+;; 	highlight-indentation company auctex))
 
-;; ;; Iterate on packages and install missing ones
-(dolist (pkg my-packages)
-  (unless (package-installed-p pkg)
-    (package-install pkg)))
+;; ;; ;; Iterate on packages and install missing ones
+;; (dolist (pkg my-packages)
+;;   (unless (package-installed-p pkg)
+;;     (package-install pkg)))
 
 ;; define various custom functions
 (require 'custom-functions)
@@ -34,11 +34,9 @@
 
 
 (require 'custom)
+;(require 'loadhist)
 
 
-(require 'package)
-;(add-to-list 'package-archives
-;             '("elpy" . "http://jorgenschaefer.github.io/packages/"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;; UTILITIES   ;;;;;
