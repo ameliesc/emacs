@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: infinite integral
-# key: infint
-# --
- \int_{-\infty}^{\infty}$0
