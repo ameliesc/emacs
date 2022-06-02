@@ -11,42 +11,42 @@
 
 
 ;; elpy settings
-;(setq elpy-rpc-virtualenv-path 'current)
+(setq elpy-rpc-virtualenv-path 'current)
 
 
 (elpy-enable)
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
-;; (add-hook 'elpy-mode-hook (lambda ()
-;;                             (add-hook 'before-save-hook
-;;                                       'elpy-format-code t nil)))
+(add-hook 'elpy-mode-hook (lambda ()
+                            (add-hook 'before-save-hook
+                                      'elpy-format-code t nil)))
 
 
-;; (setq elpy-rpc-python-command "python3")
-;; (setq elpy-rpc-backend "jedi")
-;; (setq python-shell-interpreter "jupyter"
-;;       python-shell-interpreter-args "console --simple-prompt"
-;;       python-shell-prompt-detect-failure-warning nil)
-;; (add-to-list 'python-shell-completion-native-disabled-interpreters
-;;              "jupyter")
+(setq elpy-rpc-python-command "python3")
+(setq elpy-rpc-backend "jedi")
+(setq python-shell-interpreter "jupyter"
+      python-shell-interpreter-args "console --simple-prompt"
+      python-shell-prompt-detect-failure-warning nil)
+(add-to-list 'python-shell-completion-native-disabled-interpreters
+             "jupyter")
 
-;; (setq python-check-command "flake8"
-;;              python-shell-interpreter (or (executable-find "python3")
-;;                                           (executable-find "python")))
+(setq python-check-command "flake8"
+             python-shell-interpreter (or (executable-find "python3")
+                                          (executable-find "python")))
 
-;; (define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
-;; (define-key global-map (kbd "C-c o") 'iedit-mode)
-;; (define-key elpy-mode-map (kbd "C-c m") 'elpy-company-backend)
+(define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
+(define-key global-map (kbd "C-c o") 'iedit-mode)
+(define-key elpy-mode-map (kbd "C-c m") 'elpy-company-backend)
 
 
-;; (add-hook 'elpy-mode-hook
-;;     (lambda ()
-;;     (local-unset-key (kbd "M-TAB"))
-;;     (define-key elpy-mode-map (kbd "C-c m") 'elpy-company-backend)))
+(add-hook 'elpy-mode-hook
+    (lambda ()
+    (local-unset-key (kbd "M-TAB"))
+    (define-key elpy-mode-map (kbd "C-c m") 'elpy-company-backend)))
 
-;; (setq elpy-rpc-backend "jedi")
-;; (setq elpy-set-test-runner "pytest") ; change if other test runner is used
-;; (setq python-shell-completion-native-enable nil) ;; removes annoying warning
+(setq elpy-rpc-backend "jedi")
+(setq elpy-set-test-runner "pytest") ; change if other test runner is used
+(setq python-shell-completion-native-enable nil) ;; removes annoying warning
 ;;  ;; other interpreter does silly things
 ;; ;; source: https://github.com/gabrielelanaro/emacs-for-python
 ;; ;; Mandatory

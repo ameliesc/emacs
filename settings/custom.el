@@ -51,7 +51,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(discover sql-indent format-sql mmm-jinja2 mmm-mode hydandata-light-theme helm-projectile flycheck-pyflakes pyflakes project-shells projectile projectile-git-autofetch editorconfig yaml-mode magit peacock-theme py-autopep8 paredit maxframe twilight-bright-theme s req-package pyvenv highlight-indentation company auctex))
+   '(elpy discover sql-indent format-sql mmm-jinja2 mmm-mode hydandata-light-theme helm-projectile flycheck-pyflakes pyflakes project-shells projectile projectile-git-autofetch editorconfig yaml-mode magit peacock-theme py-autopep8 paredit maxframe twilight-bright-theme s req-package pyvenv highlight-indentation company auctex))
  '(projectile-mode t nil (projectile)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
