@@ -19,4 +19,5 @@ recentf
 company-statistics-cache.el
 .session
 abbrev_defs
-	
+tramp
+network-security.data
