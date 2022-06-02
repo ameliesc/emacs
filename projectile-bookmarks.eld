@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/repo/" "~/docker-transmission-openvpn/" "~/Music_Recommendation_System/" "~/.dotfiles/")

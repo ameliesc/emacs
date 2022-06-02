@@ -9,6 +9,19 @@
 
 (package-initialize)
 
+;; Declare packages
+(setq my-packages
+      '(maxframe
+	projectile
+	elpy
+	py-autopep8
+	peacock-theme))
+
+;; Iterate on packages and install missing ones
+(dolist (pkg my-packages)
+  (unless (package-installed-p pkg)
+    (package-install pkg)))
+
 ;; define various custom functions
 (require 'custom-functions)
 
@@ -64,7 +77,7 @@
 
 
 (require 'c++-settings)
-(require 'sql-settings)
+;(require 'sql-settings)
 
 ;;; Source https://github.com/jhamrick/emacs/blob/master/.emacs
 ;---------------------------------------------------------------------

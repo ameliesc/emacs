@@ -5,6 +5,7 @@
 autosave-list/
 elpa/
 elpa-*/
+elpa/*
 ido.last
 todo/
 tramp/
