@@ -40,14 +40,7 @@
 ;;;;; UTILITIES   ;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;
 
-(defun reverse-words (beg end)
-    "Reverse the order of words in region."
-    (interactive "*r")
-    (apply
-     'insert
-      (reverse
-       (split-string
-        (delete-and-extract-region beg end) "\\b"))))
+
 
 (require 'ansi-settings)
 
