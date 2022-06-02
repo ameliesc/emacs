@@ -16,7 +16,7 @@
 (setq my-packages
       '(
 	discover sql-indent format-sql mmm-jinja2 mmm-mode
-	hydandata-light-theme helm-projectile flycheck-pyflakes pyflakes project-shells
+	hydandata-light-theme helm-projectile flycheck-pyflakes project-shells
         projectile projectile-git-autofetch editorconfig yaml-mode magit peacock-theme
 	py-autopep8 paredit maxframe twilight-bright-theme req-package pyvenv
 	highlight-indentation company auctex))
