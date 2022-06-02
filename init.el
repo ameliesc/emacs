@@ -9,18 +9,22 @@
 
 (package-initialize)
 
-;; ;; Declare packages
+;; Declare pacckages, fill in the missing packages from the textfile and uncomment code below 
 ;; (setq my-packages
-;;       '(maxframe
-;; 	projectile
-;; 	elpy
-;; 	py-autopep8
-;; 	peacock-theme))
+;;       '(list of packages))
+
+(setq my-packages
+      '(
+	discover sql-indent format-sql mmm-jinja2 mmm-mode
+	hydandata-light-theme helm-projectile flycheck-pyflakes pyflakes project-shells
+        projectile projectile-git-autofetch editorconfig yaml-mode magit peacock-theme
+	py-autopep8 paredit maxframe twilight-bright-theme req-package pyvenv
+	highlight-indentation company auctex))
 
 ;; ;; Iterate on packages and install missing ones
-;; (dolist (pkg my-packages)
-;;   (unless (package-installed-p pkg)
-;;     (package-install pkg)))
+(dolist (pkg my-packages)
+  (unless (package-installed-p pkg)
+    (package-install pkg)))
 
 ;; define various custom functions
 (require 'custom-functions)
