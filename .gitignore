@@ -21,3 +21,4 @@ company-statistics-cache.el
 abbrev_defs
 tramp
 network-security.data
+*.eld
