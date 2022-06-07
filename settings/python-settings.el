@@ -11,8 +11,15 @@
 
 
 ;; elpy settings
-(setq elpy-rpc-virtualenv-path 'current)
+(setq elpy-rpc-virtualenv-path "/Users/amelie/.virtualenvs")
+;(setq elpy-rpc-pythonpath "/Users/amelie/.emacs.d/setttings/elpa/elpy-20220322.41/elpy")
 
+(use-package pyenv-mode-auto
+  :ensure t
+  :config
+  (let ((workon-home (expand-file-name "~/.pyenv/versions")))
+  (setenv "WORKON_HOME" workon-home)
+  (setenv "VIRTUALENVWRAPPER_HOOK_DIR" workon-home)))
 
 (elpy-enable)
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
@@ -20,15 +27,18 @@
 (add-hook 'elpy-mode-hook (lambda ()
                             (add-hook 'before-save-hook
                                       'elpy-format-code t nil)))
+;(setq shell-file-name "/bin/bash")
 
-
-(setq elpy-rpc-python-command "python3")
+(setq elpy-rpc-python-command "/Users/amelie/.virtualenvs/bin/python")
 (setq elpy-rpc-backend "jedi")
-(setq python-shell-interpreter "jupyter"
-      python-shell-interpreter-args "console --simple-prompt"
-      python-shell-prompt-detect-failure-warning nil)
-(add-to-list 'python-shell-completion-native-disabled-interpreters
-             "jupyter")
+;; (setq python-shell-interpreter "jupyter"
+;;       python-shell-interpreter-args "console --simple-prompt"
+;;       python-shell-prompt-detect-failure-warning nil)
+;; (add-to-list 'python-shell-completion-native-disabled-interpreters
+;;              "jupyter")
+
+;(setq python-shell-interpreter "python"
+;python-shell-interpreter-args "-i")
 
 (setq python-check-command "flake8"
              python-shell-interpreter (or (executable-find "python3")
@@ -44,9 +54,11 @@
     (local-unset-key (kbd "M-TAB"))
     (define-key elpy-mode-map (kbd "C-c m") 'elpy-company-backend)))
 
-(setq elpy-rpc-backend "jedi")
+
 (setq elpy-set-test-runner "pytest") ; change if other test runner is used
-(setq python-shell-completion-native-enable nil) ;; removes annoying warning
+(setq python-shell-completion-native-enable nil);; removes annoying warning
+
+(setenv "WORKON_HOME" "/Users/amelie/.virtualenvs")
 ;;  ;; other interpreter does silly things
 ;; ;; source: https://github.com/gabrielelanaro/emacs-for-python
 ;; ;; Mandatory

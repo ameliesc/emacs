@@ -9,6 +9,10 @@
 
 (package-initialize)
 
+(use-package elpy
+  :ensure t
+  :init
+  (elpy-enable))
 ;; Declare pacckages, fill in the missing packages from the textfile and uncomment code below 
 ;; (setq my-packages
 ;;       '(list of packages))

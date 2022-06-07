@@ -2,6 +2,7 @@
 *~
 *#*
 #*#
+*.eld
 autosave-list/
 elpa/
 ido.last
