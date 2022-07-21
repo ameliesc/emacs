@@ -1,6 +1,4 @@
 
-(add-to-list 'load-path "~/.emacs.d/settings")
-
 (setq package-archives '
       (("gnu" . "https://elpa.gnu.org/packages/")
        ("marmalade" . "https://marmalade-repo.org/packages/")
@@ -9,8 +7,13 @@
 
 (package-initialize)
 
+(add-to-list 'load-path "~/.emacs.d/settings")
+(add-to-list 'load-path "~/.emacs.d/site-list/")
+(add-to-list 'load-path "~/.emacs.d/elpa/")
+(exec-path-from-shell-initialize)
 (use-package elpy
   :ensure t
+  
   :init
   (elpy-enable))
 ;; Declare pacckages, fill in the missing packages from the textfile and uncomment code below 
@@ -39,6 +42,7 @@
 
 (require 'custom)
 ;(require 'loadhist)
+
 
 
 
@@ -82,3 +86,17 @@
 (load
  (setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))
  'noerror)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;   Application Framework   ;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; (add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/")
+;; (require 'eaf)
+;; (require 'eaf-browser)
+;; (require 'eaf-terminal)
+(use-package vterm
+  :ensure t)
+(require 'browser)
+
+

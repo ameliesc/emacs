@@ -4,16 +4,18 @@
 
 
 
-;; ipython notebook
-;(require 'ein)
+
 (require 'py-autopep8)
+(require 'pyenv-mode)
+
 
 
 (setq home-dir "/Users/amelie")
+;(setenv "PYTHONPATH" (shell-command-to-string "$SHELL --login -c 'echo -n $PYTHONPATH'"))
 
   
 ;; elpy settings
-(setq elpy-rpc-virtualenv-path (concat home-dir ".virtualenvs"))
+(setq elpy-rpc-virtualenv-path (concat home-dir "/.virtualenvs"))
 (setq elpy-rpc-python-command "python")
 ;(setq elpy-rpc-pythonpath "/Users/amelie/.emacs.d/setttings/elpa/elpy-20220322.41/elpy")
 
@@ -31,23 +33,12 @@
 (add-hook 'elpy-mode-hook (lambda ()
                             (add-hook 'before-save-hook
                                       'elpy-format-code t nil)))
-;(setq shell-file-name "/bin/bash")
 
-;(setq elpy-rpc-python-command "/Users/amelie/.virtualenvs/bin/python")
-;(setq elpy-rpc-python-command "/Users/amelie/.virtualenvs/bin/python")
 (setq elpy-rpc-backend "jedi")
-;; (setq python-shell-interpreter "jupyter"
-;;       python-shell-interpreter-args "console --simple-prompt"
-;;       python-shell-prompt-detect-failure-warning nil)
-;; (add-to-list 'python-shell-completion-native-disabled-interpreters
-;;              "jupyter")
+(setq python-shell-interpreter (concat home-dir "/.pyenv/shims/python"))
 
-;(setq python-shell-interpreter "python"
-;python-shell-interpreter-args "-i")
 
-(setq python-check-command "flake8"
-             python-shell-interpreter (or (executable-find "python3")
-                                          (executable-find "python")))
+
 
 (define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
 (define-key global-map (kbd "C-c o") 'iedit-mode)
@@ -62,6 +53,7 @@
 
 (setq elpy-set-test-runner "pytest") ; change if other test runner is used
 (setq python-shell-completion-native-enable nil);; removes annoying warning
+
 
 (setenv "WORKON_HOME" (concat home-dir "/.virtualenvs"))
 ;;  ;; other interpreter does silly things

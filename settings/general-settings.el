@@ -1,3 +1,4 @@
+
 ;;enable line numbers
 (global-linum-mode t)
 
@@ -26,13 +27,6 @@
 ;; auto loads buffers when files changed on disk
 (global-auto-revert-mode t)
 
-;;fixes path problem for windows 
-;(when (memq window-system '(mac ns))
-;  (exec-path-from-shell-initialize))
-
-;; attempt to fix emacs not finding flake8
-(setq exec-path (append exec-path '("/usr/local/bin")))
-
 
 ;; lets buffer show full filenameand path
 (setq frame-title-format
@@ -43,6 +37,7 @@
 (setq ispell-program-name "aspell")
 
 (setenv "DICTIONARY" "en_GB")
+
 
 ;;;; Interface and typing
 ;; turn on highlight matching brackets when cursor is on one
@@ -59,8 +54,10 @@
 ;; open emacs split into 2 windows with terminal and init file
 (add-hook 'emacs-startup-hook
           (lambda ()
-            (ansi-term "/bin/zsh")
+	    (eww "google.com")
             (split-window-horizontally)
+	    (vterm)
+	    (split-window-vertically)
             (find-file-other-window "~/.emacs.d/init.el")))
 
 ;; start in full screen mode
