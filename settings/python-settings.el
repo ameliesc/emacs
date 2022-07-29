@@ -10,10 +10,10 @@
 
 
 
-(setq home-dir "/Users/amelie")
-;(setenv "PYTHONPATH" (shell-command-to-string "$SHELL --login -c 'echo -n $PYTHONPATH'"))
+(setq home-dir "/Users/ame31942")
 
-  
+
+
 ;; elpy settings
 (setq elpy-rpc-virtualenv-path (concat home-dir "/.virtualenvs"))
 (setq elpy-rpc-python-command "python")
@@ -31,8 +31,8 @@
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
 (add-hook 'elpy-mode-hook (lambda ()
-                            (add-hook 'before-save-hook
-                                      'elpy-format-code t nil)))
+			    (add-hook 'before-save-hook
+				      'elpy-format-code t nil)))
 
 (setq elpy-rpc-backend "jedi")
 (setq python-shell-interpreter (concat home-dir "/.pyenv/shims/python"))
@@ -89,11 +89,11 @@
 ;; (add-hook 'python-mode-hook 'highlight-indentation)
 
 ;; (add-hook 'python-mode-hook
-;; 	  (lambda ()
-;; 	    (setq-default indent-tabs-mode t)
-;; 	    (setq-default tab-width 4)
-;; 	    (setq-default py-indent-tabs-mode t)
-;; 	    (add-to-list 'write-file-functions 'delete-trailing-whitespace)))
+;;	  (lambda ()
+;;	    (setq-default indent-tabs-mode t)
+;;	    (setq-default tab-width 4)
+;;	    (setq-default py-indent-tabs-mode t)
+;;	    (add-to-list 'write-file-functions 'delete-trailing-whitespace)))
 
 
 
