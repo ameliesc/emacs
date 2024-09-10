@@ -1,10 +1,11 @@
+
 ;;;; AUCTeX
 
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq TeX-save-query nil)
 (setq TeX-PDF-mode t) ;enables all pdflatex modes by defaul
-
+(setq TeX-kpathsea-path-delimiter ":")
 
 ;;;; Flymake for latex
 
@@ -16,7 +17,6 @@
 
 
 (require 'package)
-(package-initialize)
 
 ;; yasnippet code 'optional', before auto-complete
 (require 'yasnippet)
@@ -24,6 +24,7 @@
 
 ;; auto-complete setup, sequence is important
 (require 'auto-complete-auctex)
+
 (add-to-list 'ac-modes 'latex-mode) ; beware of using 'LaTeX-mode instead
 (require 'ac-math) ; package should be installed first 
 (defun my-ac-latex-mode () ; add ac-sources for latex
@@ -34,7 +35,7 @@
                  ac-sources)))
 (add-hook 'LaTeX-mode-hook 'my-ac-latex-mode)
 (setq ac-math-unicode-in-math-p t)
-(ac-flyspell-workaround) ; fixes a known bug of delay due to flyspell (if it is there)
+;(ac-flyspell-workaround) ; fixes a known bug of delay due to flyspell (if it is there)
 (add-to-list 'ac-modes 'org-mode) ; auto-complete for org-mode (optional)
 (require 'auto-complete-config) ; should be after add-to-list 'ac-modes and hooks
 (ac-config-default)
@@ -93,6 +94,7 @@
 ;; fly pop up
 (define-key flyspell-mode-map (kbd "C-;") 'flyspell-popup-correct)
 (global-set-key (kbd "C-x C-k") 'flyspell-auto-correct-word)
+
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;OLD;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;
@@ -143,5 +145,8 @@
 ;; ;;        (output-pdf "evince"
 ;; ;; 		   (output-html "xdg-open"))))))
 
-
+(add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)   ; with AUCTeX LaTeX mode
+(add-hook 'text-mode-hook 'turn-on-auto-fill)	
+(add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
+(latex-preview-pane-enable)
 (provide 'latex-settings)

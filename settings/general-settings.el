@@ -1,15 +1,13 @@
-
 ;;enable line numbers
-(global-linum-mode t)
+(global-display-line-numbers-mode 1)
 
 ; highlight current line
 (global-hl-line-mode t)
 
 ;;set line break to 80
 (setq-default fill-column 80)
-(add-hook 'text-mode-hook 'turn-on-auto-fill)	
-(add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
 
+(setq home-dir "~/.")
 ;; parenthesis matching
 ;; auto close bracket insertion. New in emacs 24
 (electric-pair-mode 1)
@@ -27,6 +25,8 @@
 ;; auto loads buffers when files changed on disk
 (global-auto-revert-mode t)
 
+;; turns on autocomplete add in individual settings packages : (add-to-list 'ac-modes 'sql-mode)
+(global-auto-complete-mode t)
 
 ;; lets buffer show full filenameand path
 (setq frame-title-format
@@ -54,21 +54,28 @@
 ;; open emacs split into 2 windows with terminal and init file
 (add-hook 'emacs-startup-hook
           (lambda ()
-	    (eww "google.com")
-            (split-window-horizontally)
-	    (vterm)
-	    (split-window-vertically)
-            (find-file-other-window "~/.emacs.d/init.el")))
+	    (find-file "~/.emacs.d/init.el")
+	  ))
 
 ;; start in full screen mode
 (require 'maxframe)
 (add-hook 'window-setup-hook 'maximize-frame t)
 
-(projectile-mode +1)
-(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
-(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 ; automatically refresh buffers when changed on disk
 (global-auto-revert-mode t)
+
+
+;; automatically update packages
+(use-package auto-package-update
+  :ensure t
+  :config
+  (setq auto-package-update-delete-old-versions t)
+  (setq auto-package-update-hide-results t)
+  (auto-package-update-maybe))
+
+
+;; Path to grip
+
 
 (provide 'general-settings)

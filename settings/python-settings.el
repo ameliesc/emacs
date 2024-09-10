@@ -3,59 +3,131 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
+(defun company-yasnippet-or-completion ()
+  "Solve company yasnippet conflicts."
+  (interactive)
+  (let ((yas-fallback-behavior
+         (apply 'company-complete-common nil)))
+    (yas-expand)))
 
-
-(require 'py-autopep8)
-(require 'pyenv-mode)
-
-
-
-(setq home-dir "/Users/ame31942")
-
-
-
-;; elpy settings
-(setq elpy-rpc-virtualenv-path (concat home-dir "/.virtualenvs"))
-(setq elpy-rpc-python-command "python")
-;(setq elpy-rpc-pythonpath "/Users/amelie/.emacs.d/setttings/elpa/elpy-20220322.41/elpy")
-
-;; (use-package pyenv-mode-auto
-;;   :ensure t
-;;   :config
-;;   (let ((workon-home (expand-file-name "~/.pyenv/versions")))
-;;   (setenv "WORKON_HOME" workon-home)
-;;   (setenv "VIRTUALENVWRAPPER_HOOK_DIR" workon-home)))
-
-
-(elpy-enable)
-(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
-
-(add-hook 'elpy-mode-hook (lambda ()
-			    (add-hook 'before-save-hook
-				      'elpy-format-code t nil)))
-
-(setq elpy-rpc-backend "jedi")
-(setq python-shell-interpreter (concat home-dir "/.pyenv/shims/python"))
+(add-hook 'after-init-hook 'global-company-mode) ; force automatic company autocompletion
+(add-hook 'company-mode-hook
+          (lambda ()
+            (substitute-key-definition
+             'company-complete-common
+             'company-yasnippet-or-completion
+             company-active-map)))
 
 
 
+(use-package company
+  :ensure t)
 
+
+(package-install 'yasnippet)
+
+;;; Virtualenvironment
+;; pyenv
+;; Since Elpy runs Python in the home directory, it doesn’t deal with any local environment, so only use pyenv global.
+(use-package pyenv-mode
+  :ensure t
+  :config
+    (defun projectile-pyenv-mode-set ()
+      "Set pyenv version matching project name."
+      (let ((project (projectile-project-name)))
+        (if (member project (pyenv-mode-versions))
+            (pyenv-mode-set project)
+          (pyenv-mode-unset))))
+
+    (add-hook 'projectile-switch-project-hook 'projectile-pyenv-mode-set)
+    (add-hook 'python-mode-hook 'pyenv-mode))
+
+	 
+(setq pyenv-mode-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "C-c C-m") 'pyenv-mode-set) ; C-c C-s conflicts with AUCtex
+    (define-key map (kbd "C-c C-u") 'pyenv-mode-unset)
+    map))
+
+
+
+
+;;; Linting
+;; isort makes sure package import is correct
+(use-package python-isort
+  :ensure t
+  :hook (python-mode . python-isort-on-save-mode))
+;; pep8
+(use-package py-autopep8
+  :hook ((python-mode) . py-autopep8-mode))  
+
+
+;;; Elpy
+(use-package elpy
+  :ensure t
+  :config
+  (setq
+   elpy-rpc-backend "jedi"
+   elpy-rpc-virtualenv-path (concat home-dir "/.pyenv/versions")
+   elpy-rpc-python-command "python"
+   python-shell-interpreter (concat home-dir "/.pyenv/shims/python")
+   elpy-set-test-runner "pytest"
+   )
+  (electric-indent-local-mode -1)
+  (delete 'elpy-module-highlight-indentation elpy-modules)
+  (delete 'elpy-module-flymake elpy-modules)
+  (defun ha/elpy-goto-definition ()
+    (interactive)
+    (condition-case err
+        (elpy-goto-definition)
+      ('error (xref-find-definitions (symbol-name (symbol-at-point))))))
+  :bind (:map elpy-mode-map ([remap elpy-goto-definition] .
+                             ha/elpy-goto-definition))
+  :hook (before-save . elpy-black-fix-code)
+  :bind ("C-c m" . elpy-company-backend)
+  :commands elpy-enable
+  :init (with-eval-after-load 'python (elpy-enable)))
+
+;;; Auto-completion
+
+(use-package jedi
+  :ensure t
+  :init
+  (add-to-list 'company-backends 'company-jedi)
+  :config
+  (use-package company-jedi
+    :ensure t
+    :init
+    (add-hook 'python-mode-hook (lambda () (add-to-list 'company-backends 'company-jedi)))
+    (setq company-jedi-python-bin "python")))
+
+
+
+
+
+;; Yas snippets
 (define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
-(define-key global-map (kbd "C-c o") 'iedit-mode)
-(define-key elpy-mode-map (kbd "C-c m") 'elpy-company-backend)
 
 
-(add-hook 'elpy-mode-hook
-    (lambda ()
-    (local-unset-key (kbd "M-TAB"))
-    (define-key elpy-mode-map (kbd "C-c m") 'elpy-company-backend)))
+
+;; edit multiple occurences simultanously
+(use-package iedit
+  :ensure t
+  :bind ("C-c o" . iedit-mode))
 
 
-(setq elpy-set-test-runner "pytest") ; change if other test runner is used
+
 (setq python-shell-completion-native-enable nil);; removes annoying warning
 
 
-(setenv "WORKON_HOME" (concat home-dir "/.virtualenvs"))
+
+
+
+
+
+
+
+(setenv "WORKON_HOME" (concat home-dir "/.pyenv/versions"))
 ;;  ;; other interpreter does silly things
 ;; ;; source: https://github.com/gabrielelanaro/emacs-for-python
 ;; ;; Mandatory
@@ -94,9 +166,32 @@
 ;;	    (setq-default tab-width 4)
 ;;	    (setq-default py-indent-tabs-mode t)
 ;;	    (add-to-list 'write-file-functions 'delete-trailing-whitespace)))
+(setq pyenv-mode-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "C-c C-m") 'pyenv-mode-set) ; C-c C-s conflicts with AUCtex
+    (define-key map (kbd "C-c C-u") 'pyenv-mode-unset)
+    map))
+
+(require 'pyenv-mode)
+
+(defun projectile-pyenv-mode-set ()
+  "Set pyenv version matching project name."
+  (let ((project (projectile-project-name)))
+    (if (member project (pyenv-mode-versions))
+        (pyenv-mode-set project)
+      (pyenv-mode-unset))))
 
 
 
+;; use-package with :ensure t to intall from MELPA.
+;; with use-package
+(use-package numpydoc
+  :ensure t
+  :bind (:map python-mode-map
+              ("C-c C-n" . numpydoc-generate))
+  :config
+  (setq numpydoc-insertion-style 'yas) ;; use yasnippet style prompt
+	)
 
 
 (provide 'python-settings)

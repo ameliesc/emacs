@@ -1,7 +1,4 @@
-
-(setq package-archives '
-      (("gnu" . "https://elpa.gnu.org/packages/")
-       ("marmalade" . "https://marmalade-repo.org/packages/")
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
        ("melpa" . "https://melpa.org/packages/")))
 
 
@@ -11,29 +8,9 @@
 (add-to-list 'load-path "~/.emacs.d/site-list/")
 (add-to-list 'load-path "~/.emacs.d/elpa/")
 (exec-path-from-shell-initialize)
-(use-package elpy
-  :ensure t
-  
-  :init
-  (elpy-enable))
-;; Declare pacckages, fill in the missing packages from the textfile and uncomment code below 
-;; (setq my-packages
-;;       '(list of packages))
 
-;; (setq my-packages
-;;       '(
-;; 	discover sql-indent format-sql mmm-jinja2 mmm-mode
-;; 	hydandata-light-theme helm-projectile flycheck-pyflakes project-shells
-;;         projectile projectile-git-autofetch editorconfig yaml-mode magit peacock-theme
-;; 	py-autopep8 paredit maxframe twilight-bright-theme req-package pyvenv
-;; 	highlight-indentation company auctex))
+(require 'package-management)
 
-;; ;; ;; Iterate on packages and install missing ones
-;; (dolist (pkg my-packages)
-;;   (unless (package-installed-p pkg)
-;;     (package-install pkg)))
-
-;; define various custom functions
 (require 'custom-functions)
 
 ;; configure general settings
@@ -41,8 +18,7 @@
 
 
 (require 'custom)
-;(require 'loadhist)
-
+(require 'loadhist)
 
 
 
@@ -52,14 +28,13 @@
 
 
 
-(require 'ansi-settings)
+;(require 'ansi-settings) #not using terminal anymore, not needed in emacs
 
-;(require 'yas-snippet-settings)
 
 (use-package editorconfig
-  :ensure t
-  :config
-  (editorconfig-mode 1))
+   :ensure t
+   :config
+   (editorconfig-mode 1))
 
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;    MODES   ;;;;;
@@ -72,12 +47,13 @@
 (ido-mode t)
 
 (require 'python-settings)
-
-;(require 'latex-settings)  --- currently buggy need to fix this
-
 (require 'R)
 (require 'c++-settings)
-;(require 'sql-settings)
+(require 'projectile-settings)
+(require 'latex-settings)
+
+;;(require 'sql-settings)
+
 
 ;;; Source https://github.com/jhamrick/emacs/blob/master/.emacs
 ;---------------------------------------------------------------------
@@ -91,12 +67,21 @@
 ;;;;;;   Application Framework   ;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; (add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/")
-;; (require 'eaf)
-;; (require 'eaf-browser)
-;; (require 'eaf-terminal)
-(use-package vterm
-  :ensure t)
-(require 'browser)
 
 
+;(setq grip-binary-path "/Users/ame31942/.pyenv/versions/3.10.1/lib/python3.10/site-packages") ; why are we setting this here, comments amelie comments!!!
+
+(require 'markdown-mode)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(yaml-tomato yaml-mode vterm-toggle unicode-escape twilight-bright-theme sql-indent req-package rainbow-delimiters python-pytest python-isort python-docstring python-django python pyenv-mode-auto pydoc py-autopep8 projectile-git-autofetch project-shells pkg-info peacock-theme paredit origami numpydoc mongo mmm-jinja2 minimap maxframe markdown-soma markdown-preview-mode markdown-preview-eww magit-todos latex-preview-pane kaolin-themes jedi importmagic impatient-showdown iedit hydandata-light-theme helm-swoop helm-projectile helm-eww grip-mode google-this format-sql forge flyspell-lazy flymake-yamllint flycheck-pyflakes exec-path-from-shell eshell-vterm elpy eldoc editorconfig discover company-tabnine company-jedi company-bibtex cdlatex bash-completion auto-package-update auto-complete-auctex auctex all-the-icons ac-math)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

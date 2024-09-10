@@ -9,6 +9,12 @@
         (ansi-term (getenv "SHELL")))
     (switch-to-buffer-other-window "*ansi-term*")))
 
+
+
 (global-set-key (kbd "C-c t") 'visit-term-buffer)
 
+(eval-after-load "term"
+  '(define-key term-raw-map (kbd "C-c C-y") 'term-paste))
+
 (provide 'ansi-settings)
+

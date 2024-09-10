@@ -4,6 +4,7 @@
 #*#
 *.eld
 autosave-list/
+eaf/
 elpa/
 ido.last
 todo/
@@ -19,6 +20,11 @@ recentf
 company-statistics-cache.el
 .session
 abbrev_defs
-tramp
 network-security.data
-*.eld
+*.sqlite
+emacs-webkit
+emacs-libvterm
+projects
+site-lisp/
+transient/
+.last-package-update-day
