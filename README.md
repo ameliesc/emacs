@@ -1,7 +1,3 @@
 # Emacs Setup
 
-At the moment only Python mode is fully working,
-the rest is still to be worked on.
-
-## To do:
-* automatically install required packages 
+This has become obsolete we are using doom emacs instead. Solves a lot of the package issues we have encounterd
